@@ -1,0 +1,4 @@
+# Preserve SHA-256-audited artifact bytes, including CRLF CSV line endings.
+# Disable Git check-in/checkout end-of-line normalization for all paths.
+# Do not renormalize frozen research files.
+* -text
