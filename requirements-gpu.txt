@@ -1,0 +1,8 @@
+# Recorded GPU environment for the frozen A/B runs.
+# PyTorch 2.8.0+cu128 requires the CUDA 12.8 wheel index, for example:
+#   pip install torch==2.8.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+torch==2.8.0+cu128
+open-clip-torch==3.3.0
+scikit-learn==1.9.0
+numpy==2.3.2
+Pillow

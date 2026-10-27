@@ -1,0 +1,7 @@
+Dataset,Method,n categories,Mean (ms/image),Median (ms/image),Min,Max
+MVTec,A0 VNE-K1,15,53.06,57.70,31.40,78.40
+MVTec,A1 Nearest-Full,15,73.43,77.90,51.40,100.70
+MVTec,A2 Coreset-5%,15,52.31,61.50,31.80,77.70
+VisA,A0 VNE-K1,12,26.92,27.05,25.10,28.20
+VisA,A1 Nearest-Full,12,46.83,46.80,45.10,48.60
+VisA,A2 Coreset-5%,12,28.20,27.65,25.00,35.10

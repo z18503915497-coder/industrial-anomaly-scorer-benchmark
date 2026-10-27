@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript and this archive. No DOI has been assigned and this record is not yet published. The authors release the package under file-level mixed licensing: the 33 authors' original Python files listed in LICENSE_CODE_SCOPE.md are released under MIT; the authors' derived result tables, figures, and documentation are released under CC BY 4.0. These licenses do not apply to third-party datasets, weights, or libraries, which remain under their original licenses."
+title: "Reproducibility package for: Localization–Detection Trade-offs in Industrial Anomaly Scoring at Near-Matched Memory Budgets: A Controlled 27-Category Study"
+type: software
+authors:
+  - family-names: Zhi
+    given-names: Ruipeng
+    affiliation: "Tomsk Polytechnic University, Tomsk, Russia"
+    orcid: "https://orcid.org/0009-0002-6065-4930"
+  - family-names: Li
+    given-names: Hao
+    affiliation: "Tomsk Polytechnic University, Tomsk, Russia"
+version: "1.2.6"
+keywords:
+  - industrial anomaly detection
+  - anomaly localization
+  - full-covariance Gaussian
+  - coreset subsampling
+  - controlled benchmark
+  - AUPRO

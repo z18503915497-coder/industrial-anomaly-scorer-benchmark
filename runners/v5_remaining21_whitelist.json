@@ -1,0 +1,264 @@
+{
+ "whitelist_id": "v5_remaining21_20261025",
+ "date": "2026-10-25",
+ "purpose": "Experiment A/B five-method 27-category extension; remaining 21 categories only",
+ "full27": {
+  "MVTec": [
+   "bottle",
+   "cable",
+   "capsule",
+   "carpet",
+   "grid",
+   "hazelnut",
+   "leather",
+   "metal_nut",
+   "pill",
+   "screw",
+   "tile",
+   "toothbrush",
+   "transistor",
+   "wood",
+   "zipper"
+  ],
+  "VisA": [
+   "candle",
+   "capsules",
+   "cashew",
+   "chewinggum",
+   "fryum",
+   "macaroni1",
+   "macaroni2",
+   "pcb1",
+   "pcb2",
+   "pcb3",
+   "pcb4",
+   "pipe_fryum"
+  ]
+ },
+ "completed6": {
+  "MVTec": [
+   "bottle",
+   "grid",
+   "screw"
+  ],
+  "VisA": [
+   "candle",
+   "pcb3",
+   "macaroni1"
+  ]
+ },
+ "remaining21": {
+  "MVTec": [
+   "cable",
+   "capsule",
+   "carpet",
+   "hazelnut",
+   "leather",
+   "metal_nut",
+   "pill",
+   "tile",
+   "toothbrush",
+   "transistor",
+   "wood",
+   "zipper"
+  ],
+  "VisA": [
+   "capsules",
+   "cashew",
+   "chewinggum",
+   "fryum",
+   "macaroni2",
+   "pcb1",
+   "pcb2",
+   "pcb4",
+   "pipe_fryum"
+  ]
+ },
+ "counts": {
+  "MVTec": 12,
+  "VisA": 9,
+  "total": 21,
+  "methods": 5,
+  "expected_units": 105,
+  "full27_expected_units": 135
+ },
+ "excluded_completed6": [
+  "MVTec:bottle",
+  "MVTec:grid",
+  "MVTec:screw",
+  "VisA:candle",
+  "VisA:pcb3",
+  "VisA:macaroni1"
+ ],
+ "remaining21_keys": [
+  "MVTec:cable",
+  "MVTec:capsule",
+  "MVTec:carpet",
+  "MVTec:hazelnut",
+  "MVTec:leather",
+  "MVTec:metal_nut",
+  "MVTec:pill",
+  "MVTec:tile",
+  "MVTec:toothbrush",
+  "MVTec:transistor",
+  "MVTec:wood",
+  "MVTec:zipper",
+  "VisA:capsules",
+  "VisA:cashew",
+  "VisA:chewinggum",
+  "VisA:fryum",
+  "VisA:macaroni2",
+  "VisA:pcb1",
+  "VisA:pcb2",
+  "VisA:pcb4",
+  "VisA:pipe_fryum"
+ ],
+ "targets_file": "pilot_reference_targets_full27.json",
+ "targets_sha256": "a52c52528156f02108466790983d98305b48f1558ca3a810e90590b051376057",
+ "targets_source": {
+  "MVTec:bottle": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\bottle.json",
+   "sha256": "c8ff636fd025b3cb6594ae397594cc299e6f2fd33e7fc1a1b249fb2b10033adf"
+  },
+  "MVTec:cable": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\cable.json",
+   "sha256": "0d2b857e251e850b0b315821229aee40513629b2ed6486e43ed03490000e92d6"
+  },
+  "MVTec:capsule": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\capsule.json",
+   "sha256": "2c622799e3a7f2e321564cbc9d40de6af2dc666c53c6ad8ae1f202215ba540e2"
+  },
+  "MVTec:carpet": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\carpet.json",
+   "sha256": "583c06145d5b46b06eeec3a2bbd19d6966e84b299906ffb50f355d3f8a23aef2"
+  },
+  "MVTec:grid": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\grid.json",
+   "sha256": "295d30cce0912f9eb348185d3b80deede3790e96aadfacb82ed43b5c2a459e16"
+  },
+  "MVTec:hazelnut": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\hazelnut.json",
+   "sha256": "516762cd0ca44fe193e1e77ee67917d5442da3084d26ea2a17277f948c6c0e57"
+  },
+  "MVTec:leather": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\leather.json",
+   "sha256": "cf2d6ac0d7282a80bb20b1197c45c7a9a448a7509d2a49691131de3329e43452"
+  },
+  "MVTec:metal_nut": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\metal_nut.json",
+   "sha256": "3179e1b36214df5eaf47b74ca97e1f97af2b88e31f3c02c5cbbb323f355dd09a"
+  },
+  "MVTec:pill": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\pill.json",
+   "sha256": "9f4012da4a31120cbb6d2c93a47af2f1f2256098e9be27d25e4adb1b068b04b2"
+  },
+  "MVTec:screw": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\screw.json",
+   "sha256": "0bde264f348ac170e6fe25b6a65e5d1488b9634d24714247d549fd3ca392208d"
+  },
+  "MVTec:tile": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\tile.json",
+   "sha256": "c9c68146b7927be2ea796e84e50e1fdf5f406c776f64b7b4fb7f3827703b077e"
+  },
+  "MVTec:toothbrush": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\toothbrush.json",
+   "sha256": "b5f8192ed5e99f4b7128dadc5d39e121780aa2f358c8c6432bf8df906dbacb64"
+  },
+  "MVTec:transistor": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\transistor.json",
+   "sha256": "99e649ee740d54e2fa7ddbfe15097f4c4063d1b59e120dcca12a252f95e0bb08"
+  },
+  "MVTec:wood": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\wood.json",
+   "sha256": "5faec265aea34fd146f3f9a7917881ed45380d3a84c38e51a710628c894217e8"
+  },
+  "MVTec:zipper": {
+   "path": "<INTERNAL_RESULTS_DIR>\\MVTec\\per_category\\zipper.json",
+   "sha256": "5edf0982e34daa078ed78f48bbe602803a0718642dfda7236a125eb7a3344d47"
+  },
+  "VisA:candle": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\candle.json",
+   "sha256": "8c39310441185a70c3e5016c7285b81d6dcf18bd633a151c350ae4ee73421b4e"
+  },
+  "VisA:capsules": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\capsules.json",
+   "sha256": "eaec47871ce061126db50b52a56ca850129e442eff7b57fa565444d7a872f263"
+  },
+  "VisA:cashew": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\cashew.json",
+   "sha256": "e0f2a77afa9a9ca4029bcbe88747e44a7655d3c3c3a39f8b4f2c84edfb30698a"
+  },
+  "VisA:chewinggum": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\chewinggum.json",
+   "sha256": "4b4c804204b87675682790500131380eb75a4e69bbe516bfcde92fbcd7f17614"
+  },
+  "VisA:fryum": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\fryum.json",
+   "sha256": "c2c4f6ba75502dc6ca14ab18eaea9636af6b872afe337a43b33afcad490016e7"
+  },
+  "VisA:macaroni1": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\macaroni1.json",
+   "sha256": "fbc16fde5be52d02848b7a711b8d890da134c77d9cd682b223f9b0474abe891c"
+  },
+  "VisA:macaroni2": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\macaroni2.json",
+   "sha256": "19880412383e1447b5972e83de8320bee338c84ad44163d4a8f853c8bcc1c089"
+  },
+  "VisA:pcb1": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\pcb1.json",
+   "sha256": "af0cc8de04024f9cdd213772fe2b6046651bd6c8b4229820d3e3384c2e183996"
+  },
+  "VisA:pcb2": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\pcb2.json",
+   "sha256": "44e20a6f2c04969846617f29e3e6729a4bc451abe6a1a3e8476db1295d2928c6"
+  },
+  "VisA:pcb3": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\pcb3.json",
+   "sha256": "2061e7e02b9d9216323777d017aa39f6a6c324c66b000fbb268f04e2879f8b75"
+  },
+  "VisA:pcb4": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\pcb4.json",
+   "sha256": "d465d4880878c43c30a9c56fc357bef73efab92de2f2732982b379791af0d9fb"
+  },
+  "VisA:pipe_fryum": {
+   "path": "<INTERNAL_RESULTS_DIR>\\VisA\\per_category\\pipe_fryum.json",
+   "sha256": "87c5e3dfa1c94dce3158d341ab4eb4f1148df8217952e7765b6ec72ed3086433"
+  }
+ },
+ "source_manifest_sha256": {
+  "mvtec/run_manifest.json": "edaddd39f9307e7795eb626381e1ff26c11f6a3819723f1a2aecf1699231b373",
+  "mvtec/run_fingerprint.json": "77a88ebf7969f06d4b65cbff4af617a440a839a7fd63507ed4ad52cd87b92363",
+  "visa/run_manifest.json": "e7610e84f5c649d0e2b4207f7b274fab0d0452391af6ac601060a531df672eba",
+  "visa/run_fingerprint.json": "a720b7c9fc6a532ed92f8db6147f0064386b6c42b3652cf3f33b260dd64f1e65"
+ },
+ "old_six_targets_sha256": "c72e1a6bd5c6a61c5ef1c45a445ab8f65d37b19c290c11230047aa44174f6e72",
+ "old_six_target_comparison_max_abs_diff": 4.75246508813143e-11,
+ "protocol": {
+  "encoder": "ViT-B-16-quickgelu (OpenAI weights 4b869929...)",
+  "features": "196x512 patch features",
+  "reference": "sorted-first 50 normal images per category",
+  "methods": [
+   "A0_vne_k1",
+   "A1_nearest_full",
+   "A2_nearest_coreset5",
+   "A3_nearest_coreset10",
+   "A4_nearest_random5"
+  ],
+  "metrics": [
+   "image_auroc_top1",
+   "pixel_auroc_global",
+   "aupro_0_30"
+  ],
+  "b3": "3 warm-up + 10 timed reps; fixed first-50-image load",
+  "tolerances": {
+   "image_auroc_top1": 1e-06,
+   "pixel_auroc_global": 1e-06,
+   "aupro_pass_max": 3e-05,
+   "aupro_warning_max": 0.001
+  },
+  "completed6_must_not_rerun": true,
+  "full27_is_not_single_run": true
+ },
+ "batch_default": "remaining_21_ab_extension",
+ "statistical_plan_id": "v5-stats-locked-20261025"
+}

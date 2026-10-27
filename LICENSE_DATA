@@ -1,0 +1,29 @@
+Derived data and documentation license: CC BY 4.0
+================================================================
+
+Copyright (c) 2026 Ruipeng Zhi and Hao Li
+
+The derived result tables, figures, and documentation created by the authors
+in this package are made available under the Creative Commons Attribution 4.0
+International License (CC BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt these materials for any purpose, provided that
+you give appropriate credit, link to the license, and indicate whether changes
+were made.
+
+This license applies only to the authors' derived result tables, figures, and
+documentation. It does NOT apply to:
+
+- MVTec AD images or annotations (MVTec AD is CC BY-NC-SA 4.0);
+- VisA images or annotations (the VisA dataset is CC BY 4.0; VisA source code is
+  separately Apache-2.0; the dataset license is not the source-code license);
+- OpenCLIP or OpenAI CLIP pretrained weights;
+- any other third-party dataset, model, or library.
+
+Those materials are not redistributed in this package and remain governed by
+their original licenses. Users must obtain them from their official providers.
+
+The authors release the derived tables, figures, and documentation under
+CC BY 4.0. Final publication requires explicit authorization by both authors.

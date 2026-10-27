@@ -1,0 +1,17 @@
+OpenCLIP weight fingerprint
+============================
+
+File: open_clip_model.safetensors
+SHA-256: 4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f
+
+Model: ViT-B-16-quickgelu (OpenCLIP / OpenAI CLIP ViT-B/16 weights)
+QuickGELU: true
+Feature output used by the study: 196 projected patch tokens on a 14x14 grid, D = 512,
+L2-normalized; the global output is not used by the five scorers.
+
+Acquisition: the weight file was loaded locally and strictly (no network download during the
+formal runs). The file is not included in this package. Obtain it from the official OpenCLIP /
+OpenAI CLIP source and verify the SHA-256 above before use.
+
+License note: the weight file is not redistributed here. The user is responsible for complying
+with the original model license.

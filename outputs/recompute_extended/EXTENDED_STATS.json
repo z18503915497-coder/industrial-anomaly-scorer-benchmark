@@ -1,0 +1,342 @@
+{
+  "source": "frozen CSVs; CPU recomputation; no GPU, no training",
+  "formal_primary": {
+    "MVTec": {
+      "label": "formal primary, full 27, A0-A2, AUPRO",
+      "n": 15,
+      "mean_delta": 0.06036961249333332,
+      "median_delta": 0.048090497799999965,
+      "wins_losses_ties": [
+        14,
+        1,
+        0
+      ],
+      "wilcoxon_stat": 3.0,
+      "wilcoxon_p_uncorrected": 0.00030517578125,
+      "wilcoxon_method": "exact",
+      "n_zeros": 0,
+      "n_abs_ties": 0,
+      "holm_p": 0.0006103515625
+    },
+    "VisA": {
+      "label": "formal primary, full 27, A0-A2, AUPRO",
+      "n": 12,
+      "mean_delta": 0.04183059277499999,
+      "median_delta": 0.03445926770000002,
+      "wins_losses_ties": [
+        10,
+        2,
+        0
+      ],
+      "wilcoxon_stat": 8.0,
+      "wilcoxon_p_uncorrected": 0.01220703125,
+      "wilcoxon_method": "exact",
+      "n_zeros": 0,
+      "n_abs_ties": 0,
+      "holm_p": 0.01220703125
+    },
+    "boundary": "formal primary for the 27-category extension; pilot-informed prespecified; Holm over the two datasets; not an independent blinded confirmation"
+  },
+  "post_hoc_21class": {
+    "MVTec": {
+      "label": "post hoc 21-class, A0-A2, AUPRO; not blind; full 27 remains formal primary",
+      "n": 12,
+      "mean_delta": 0.05585866084999999,
+      "median_delta": 0.04749988704999997,
+      "wins_losses_ties": [
+        11,
+        1,
+        0
+      ],
+      "wilcoxon_stat": 3.0,
+      "wilcoxon_p_uncorrected": 0.00244140625,
+      "wilcoxon_method": "exact",
+      "n_zeros": 0,
+      "n_abs_ties": 0,
+      "holm_p": 0.0048828125
+    },
+    "VisA": {
+      "label": "post hoc 21-class, A0-A2, AUPRO; not blind; full 27 remains formal primary",
+      "n": 9,
+      "mean_delta": 0.03275044245555555,
+      "median_delta": 0.02647756000000001,
+      "wins_losses_ties": [
+        7,
+        2,
+        0
+      ],
+      "wilcoxon_stat": 7.0,
+      "wilcoxon_p_uncorrected": 0.07421875,
+      "wilcoxon_method": "exact",
+      "n_zeros": 0,
+      "n_abs_ties": 0,
+      "holm_p": 0.07421875
+    },
+    "boundary": "post hoc sensitivity excluding six pilot categories; the 21 categories were observed in the earlier QuickGELU experiment, not an unseen sample; Holm over the two datasets; does not replace the formal full-27 primary"
+  },
+  "historical_pca": {
+    "PCA090": {
+      "MVTec": {
+        "vs_A0_same_run": {
+          "label": "same-run historical, post hoc, uncorrected; not an equivalence test",
+          "n": 15,
+          "mean_delta": 0.0008435379133333438,
+          "median_delta": -0.0011473309999999737,
+          "wins_losses_ties": [
+            7,
+            8,
+            0
+          ],
+          "wilcoxon_stat": 59.0,
+          "wilcoxon_p_uncorrected": 0.97796630859375,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        },
+        "vs_A2_cross_batch": {
+          "label": "cross-batch, post hoc, uncorrected; not an equivalence test",
+          "n": 15,
+          "mean_delta": 0.061209890659999995,
+          "median_delta": 0.04694088019999998,
+          "wins_losses_ties": [
+            14,
+            1,
+            0
+          ],
+          "wilcoxon_stat": 5.0,
+          "wilcoxon_p_uncorrected": 0.0006103515625,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        }
+      },
+      "VisA": {
+        "vs_A0_same_run": {
+          "label": "same-run historical, post hoc, uncorrected; not an equivalence test",
+          "n": 12,
+          "mean_delta": 0.00027542319999999954,
+          "median_delta": 0.0013952194499999848,
+          "wins_losses_ties": [
+            7,
+            5,
+            0
+          ],
+          "wilcoxon_stat": 35.0,
+          "wilcoxon_p_uncorrected": 0.791015625,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        },
+        "vs_A2_cross_batch": {
+          "label": "cross-batch, post hoc, uncorrected; not an equivalence test",
+          "n": 12,
+          "mean_delta": 0.042110430433333325,
+          "median_delta": 0.03541021865000005,
+          "wins_losses_ties": [
+            10,
+            2,
+            0
+          ],
+          "wilcoxon_stat": 8.0,
+          "wilcoxon_p_uncorrected": 0.01220703125,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        }
+      }
+    },
+    "PCA097": {
+      "MVTec": {
+        "vs_A0_same_run": {
+          "label": "same-run historical, post hoc, uncorrected; not an equivalence test",
+          "n": 15,
+          "mean_delta": 0.003393344353333368,
+          "median_delta": 0.000895981300000015,
+          "wins_losses_ties": [
+            9,
+            6,
+            0
+          ],
+          "wilcoxon_stat": 40.0,
+          "wilcoxon_p_uncorrected": 0.27685546875,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        },
+        "vs_A2_cross_batch": {
+          "label": "cross-batch, post hoc, uncorrected; not an equivalence test",
+          "n": 15,
+          "mean_delta": 0.06375969710000001,
+          "median_delta": 0.06474408519999997,
+          "wins_losses_ties": [
+            13,
+            2,
+            0
+          ],
+          "wilcoxon_stat": 4.0,
+          "wilcoxon_p_uncorrected": 0.00042724609375,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        }
+      },
+      "VisA": {
+        "vs_A0_same_run": {
+          "label": "same-run historical, post hoc, uncorrected; not an equivalence test",
+          "n": 12,
+          "mean_delta": 0.002337385983333338,
+          "median_delta": 0.002663268250000017,
+          "wins_losses_ties": [
+            9,
+            3,
+            0
+          ],
+          "wilcoxon_stat": 23.0,
+          "wilcoxon_p_uncorrected": 0.2333984375,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        },
+        "vs_A2_cross_batch": {
+          "label": "cross-batch, post hoc, uncorrected; not an equivalence test",
+          "n": 12,
+          "mean_delta": 0.04417239321666667,
+          "median_delta": 0.04306572959999999,
+          "wins_losses_ties": [
+            11,
+            1,
+            0
+          ],
+          "wilcoxon_stat": 7.0,
+          "wilcoxon_p_uncorrected": 0.00927734375,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        }
+      }
+    },
+    "PCA099": {
+      "MVTec": {
+        "vs_A0_same_run": {
+          "label": "same-run historical, post hoc, uncorrected; not an equivalence test",
+          "n": 15,
+          "mean_delta": -0.006732040253333323,
+          "median_delta": -0.008309292100000087,
+          "wins_losses_ties": [
+            3,
+            12,
+            0
+          ],
+          "wilcoxon_stat": 23.0,
+          "wilcoxon_p_uncorrected": 0.03533935546875,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        },
+        "vs_A2_cross_batch": {
+          "label": "cross-batch, post hoc, uncorrected; not an equivalence test",
+          "n": 15,
+          "mean_delta": 0.05363431249333332,
+          "median_delta": 0.05601148840000003,
+          "wins_losses_ties": [
+            12,
+            3,
+            0
+          ],
+          "wilcoxon_stat": 10.0,
+          "wilcoxon_p_uncorrected": 0.00262451171875,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        }
+      },
+      "VisA": {
+        "vs_A0_same_run": {
+          "label": "same-run historical, post hoc, uncorrected; not an equivalence test",
+          "n": 12,
+          "mean_delta": -0.00123340375000001,
+          "median_delta": 0.00015466945000000565,
+          "wins_losses_ties": [
+            6,
+            6,
+            0
+          ],
+          "wilcoxon_stat": 37.0,
+          "wilcoxon_p_uncorrected": 0.90966796875,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        },
+        "vs_A2_cross_batch": {
+          "label": "cross-batch, post hoc, uncorrected; not an equivalence test",
+          "n": 12,
+          "mean_delta": 0.040601603483333325,
+          "median_delta": 0.043033560000000026,
+          "wins_losses_ties": [
+            10,
+            2,
+            0
+          ],
+          "wilcoxon_stat": 12.0,
+          "wilcoxon_p_uncorrected": 0.0341796875,
+          "wilcoxon_method": "exact",
+          "n_zeros": 0,
+          "n_abs_ties": 0
+        }
+      }
+    },
+    "boundary": "PCA batch is separate from the 135-record freeze. PCA-vs-A0 is same-run historical; PCA-vs-A2 is cross-batch. All comparisons are post hoc, uncorrected, and not equivalence tests; no PCA preparation/B3/B5 measurements exist."
+  },
+  "storage": {
+    "MVTec": {
+      "PCA090": {
+        "n": 15,
+        "mean_bytes": 661094.4,
+        "min_bytes": 376832.0,
+        "max_bytes": 892928.0,
+        "dtype_note": "float64 components_+mean_ per historical protocol"
+      },
+      "PCA097": {
+        "n": 15,
+        "mean_bytes": 1280955.7333333334,
+        "min_bytes": 970752.0,
+        "max_bytes": 1486848.0,
+        "dtype_note": "float64 components_+mean_ per historical protocol"
+      },
+      "PCA099": {
+        "n": 15,
+        "mean_bytes": 1677448.5333333334,
+        "min_bytes": 1466368.0,
+        "max_bytes": 1802240.0,
+        "dtype_note": "float64 components_+mean_ per historical protocol"
+      },
+      "A0_min": 1050628,
+      "A2": 1003520
+    },
+    "VisA": {
+      "PCA090": {
+        "n": 12,
+        "mean_bytes": 636586.6666666666,
+        "min_bytes": 495616.0,
+        "max_bytes": 782336.0,
+        "dtype_note": "float64 components_+mean_ per historical protocol"
+      },
+      "PCA097": {
+        "n": 12,
+        "mean_bytes": 1274197.3333333333,
+        "min_bytes": 1126400.0,
+        "max_bytes": 1404928.0,
+        "dtype_note": "float64 components_+mean_ per historical protocol"
+      },
+      "PCA099": {
+        "n": 12,
+        "mean_bytes": 1679018.6666666667,
+        "min_bytes": 1581056.0,
+        "max_bytes": 1757184.0,
+        "dtype_note": "float64 components_+mean_ per historical protocol"
+      },
+      "A0_min": 1050628,
+      "A2": 1003520
+    }
+  }
+}

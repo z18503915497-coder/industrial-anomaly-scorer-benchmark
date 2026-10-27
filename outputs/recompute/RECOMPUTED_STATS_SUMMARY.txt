@@ -1,0 +1,184 @@
+rows=135 unique_units=135
+duplicates=[] missing=0
+status={'OK': 135} datasets={'MVTec': 75, 'VisA': 60}
+warnings(120):
+  {'dataset': 'VisA', 'category': 'candle', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'candle', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'candle', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'candle', 'method': 'A0_vne_k1', 'aupro_repro_warning': '1', 'reproduction': 'WARNING'}
+  {'dataset': 'VisA', 'category': 'candle', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb3', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb3', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb3', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pcb3', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pcb3', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'macaroni1', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'macaroni1', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'macaroni1', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'macaroni1', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'macaroni1', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'cable', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'cable', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'cable', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'cable', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'cable', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'capsule', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'capsule', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'capsule', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'capsule', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'capsule', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'carpet', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'carpet', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'carpet', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'carpet', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'carpet', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'hazelnut', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'hazelnut', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'hazelnut', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'hazelnut', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'hazelnut', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'leather', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'leather', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'leather', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'leather', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'leather', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'metal_nut', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'metal_nut', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'metal_nut', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'metal_nut', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'metal_nut', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'pill', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'pill', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'pill', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'pill', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'pill', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'tile', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'tile', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'tile', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'tile', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'tile', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'toothbrush', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'toothbrush', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'toothbrush', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'toothbrush', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'toothbrush', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'transistor', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'transistor', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'transistor', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'transistor', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'transistor', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'wood', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'wood', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'wood', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'wood', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'wood', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'zipper', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'zipper', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'MVTec', 'category': 'zipper', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'zipper', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'MVTec', 'category': 'zipper', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'capsules', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'capsules', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'capsules', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'capsules', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'capsules', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'cashew', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'cashew', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'cashew', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'cashew', 'method': 'A0_vne_k1', 'aupro_repro_warning': '1', 'reproduction': 'WARNING'}
+  {'dataset': 'VisA', 'category': 'cashew', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'chewinggum', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'chewinggum', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'chewinggum', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'chewinggum', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'chewinggum', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'fryum', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'fryum', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'fryum', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'fryum', 'method': 'A0_vne_k1', 'aupro_repro_warning': '1', 'reproduction': 'WARNING'}
+  {'dataset': 'VisA', 'category': 'fryum', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'macaroni2', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'macaroni2', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'macaroni2', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'macaroni2', 'method': 'A0_vne_k1', 'aupro_repro_warning': '1', 'reproduction': 'WARNING'}
+  {'dataset': 'VisA', 'category': 'macaroni2', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb1', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb1', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb1', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pcb1', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pcb1', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb2', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb2', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb2', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pcb2', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pcb2', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb4', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb4', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pcb4', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pcb4', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pcb4', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pipe_fryum', 'method': 'A3_nearest_coreset10', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pipe_fryum', 'method': 'A2_nearest_coreset5', 'aupro_repro_warning': '0', 'reproduction': ''}
+  {'dataset': 'VisA', 'category': 'pipe_fryum', 'method': 'A1_nearest_full', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pipe_fryum', 'method': 'A0_vne_k1', 'aupro_repro_warning': '0', 'reproduction': 'MATCH'}
+  {'dataset': 'VisA', 'category': 'pipe_fryum', 'method': 'A4_nearest_random5', 'aupro_repro_warning': '0', 'reproduction': ''}
+b5_status={'NOT_RUN': 54, 'OK': 81}
+b3_n_images=[42, 50] cap_counts={'1': 130, '0': 5}
+
+PRIMARY A0-A2 AUPRO
+  MVTec: n=15 mean=+0.060370 median=+0.048090 CI=[+0.035869,+0.085589] W/L/T=[14, 1, 0] p=0.000305175781 (exact) holm=0.000610351562
+  VisA: n=12 mean=+0.041831 median=+0.034459 CI=[+0.015484,+0.068168] W/L/T=[10, 2, 0] p=0.0122070312 (exact) holm=0.0122070312
+
+SECONDARY
+  MVTec  A0_vs_A2_image         mean=+0.001201 W/L/T=[5, 9, 1] raw_p=0.706427 bh_q=0.706427
+  MVTec  A0_vs_A2_pixel         mean=+0.027162 W/L/T=[14, 1, 0] raw_p=0.000305176 bh_q=0.00152588
+  MVTec  A0_vs_A4_aupro         mean=+0.050260 W/L/T=[15, 0, 0] raw_p=6.10352e-05 bh_q=0.000610352
+  MVTec  A0_vs_A1_aupro         mean=+0.027414 W/L/T=[12, 3, 0] raw_p=0.0215454 bh_q=0.035909
+  MVTec  A0_vs_A3_aupro         mean=+0.041415 W/L/T=[12, 3, 0] raw_p=0.00201416 bh_q=0.0050354
+  VisA   A0_vs_A2_image         mean=-0.025168 W/L/T=[6, 6, 0] raw_p=0.469727 bh_q=0.521918
+  VisA   A0_vs_A2_pixel         mean=+0.019485 W/L/T=[11, 1, 0] raw_p=0.012207 bh_q=0.0244141
+  VisA   A0_vs_A4_aupro         mean=+0.034716 W/L/T=[11, 1, 0] raw_p=0.000976562 bh_q=0.00325521
+  VisA   A0_vs_A1_aupro         mean=+0.012389 W/L/T=[7, 5, 0] raw_p=0.469727 bh_q=0.521918
+  VisA   A0_vs_A3_aupro         mean=+0.020352 W/L/T=[9, 3, 0] raw_p=0.17627 bh_q=0.251814
+
+POOLED 27 DESCRIPTIVE
+  image_auroc_top1: mean=-0.010519 median=-0.003750 better/tie/worse=11/1/15
+  pixel_auroc_global: mean=+0.023750 median=+0.015530 better/tie/worse=25/0/2
+  aupro_0_30: mean=+0.052130 median=+0.046909 better/tie/worse=24/0/3
+
+IMAGE REGRESSIONS: 15
+  MVTec:bottle -0.002381
+  MVTec:cable -0.012931
+  MVTec:capsule -0.035102
+  MVTec:metal_nut -0.013685
+  MVTec:pill -0.005183
+  MVTec:screw -0.099611
+  MVTec:transistor -0.003750
+  MVTec:wood -0.007018
+  MVTec:zipper -0.017069
+  VisA:fryum -0.008800
+  VisA:pcb1 -0.034300
+  VisA:pcb2 -0.075500
+  VisA:pcb3 -0.137327
+  VisA:pcb4 -0.113861
+  VisA:pipe_fryum -0.006800
+
+STORAGE
+  MVTec: {'A0_native': 3147780.0, 'A0_min': 1050628.0, 'A1': 20070400.0, 'A2': 1003520.0, 'A3': 2007040.0, 'A4': 1003520.0, 'A1_over_A0min': 19.1032, 'A0min_over_A2': 1.0469, 'A1_over_A2': 20.0, 'A0nat_over_A2': 3.1367}
+  VisA: {'A0_native': 3147780.0, 'A0_min': 1050628.0, 'A1': 20070400.0, 'A2': 1003520.0, 'A3': 2007040.0, 'A4': 1003520.0, 'A1_over_A0min': 19.1032, 'A0min_over_A2': 1.0469, 'A1_over_A2': 20.0, 'A0nat_over_A2': 3.1367}
+
+CROSS-OVER
+  MVTec: {'B2_A0_mean_s': 0.54456, 'B2_A2_mean_s': 3.59752, 'delta_prepare_s': -3.05296, 'B3_per_image_A0_s': 0.000421667, 'B3_per_image_A2_s': 0.0005802, 'delta_per_image_s': -0.000158533, 'break_even_images': None}
+  VisA: {'B2_A0_mean_s': 0.527467, 'B2_A2_mean_s': 3.4307, 'delta_prepare_s': -2.903233, 'B3_per_image_A0_s': 0.000418, 'B3_per_image_A2_s': 0.000573, 'delta_per_image_s': -0.000155, 'break_even_images': None}
+
+DESCRIPTIVES
+  MVTec A0_vne_k1: img=0.929791 pix=0.943075 aupro=0.828863 B2med=0.509200 B3med_ms=0.419000 B4med=0.135000 store_min=1050628
+  MVTec A1_nearest_full: img=0.933214 pix=0.929315 aupro=0.801449 B2med=0.029600 B3med_ms=6.851000 B4med=2.195000 store_min=20070400
+  MVTec A2_nearest_coreset5: img=0.928590 pix=0.915914 aupro=0.768493 B2med=3.539400 B3med_ms=0.574000 B4med=0.172000 store_min=1003520
+  MVTec A3_nearest_coreset10: img=0.930073 pix=0.924699 aupro=0.787448 B2med=7.213000 B3med_ms=0.873000 B4med=0.275000 store_min=2007040
+  MVTec A4_nearest_random5: img=0.893919 pix=0.916202 aupro=0.778603 B2med=0.002100 B3med_ms=0.575000 B4med=0.172000 store_min=1003520
+  VisA A0_vne_k1: img=0.828676 pix=0.894413 aupro=0.653772 B2med=0.490750 B3med_ms=0.414500 B4med=0.229000 store_min=1050628
+  VisA A1_nearest_full: img=0.858082 pix=0.890569 aupro=0.641383 B2med=0.025150 B3med_ms=6.647000 B4med=3.561000 store_min=20070400
+  VisA A2_nearest_coreset5: img=0.853845 pix=0.874929 aupro=0.611941 B2med=3.386550 B3med_ms=0.572000 B4med=0.274000 store_min=1003520
+  VisA A3_nearest_coreset10: img=0.861283 pix=0.884649 aupro=0.633420 B2med=7.017650 B3med_ms=0.855500 B4med=0.461000 store_min=2007040
+  VisA A4_nearest_random5: img=0.815263 pix=0.876932 aupro=0.619055 B2med=0.001550 B3med_ms=0.559500 B4med=0.266000 store_min=1003520

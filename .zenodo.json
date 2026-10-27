@@ -1,0 +1,27 @@
+{
+  "title": "Reproducibility package for: Localization–Detection Trade-offs in Industrial Anomaly Scoring at Near-Matched Memory Budgets: A Controlled 27-Category Study",
+  "description": "Frozen 135-record A/B results, historical PCA result tables, statistical recomputation code, table and figure generation code, experiment runners, protocol manifests, and measurement notes for a controlled 27-category comparison of five anomaly-detection scorers on MVTec AD and VisA. The package includes CPU-verified recomputation, tables, and figures. It does not include dataset images or pretrained weights. This is release-preparation metadata; the record has not been published and no DOI has been assigned.",
+  "creators": [
+    {
+      "name": "Zhi, Ruipeng",
+      "affiliation": "Tomsk Polytechnic University, Tomsk, Russia",
+      "orcid": "0009-0002-6065-4930"
+    },
+    {
+      "name": "Li, Hao",
+      "affiliation": "Tomsk Polytechnic University, Tomsk, Russia"
+    }
+  ],
+  "version": "1.2.6",
+  "keywords": [
+    "industrial anomaly detection",
+    "anomaly localization",
+    "full-covariance Gaussian",
+    "coreset subsampling",
+    "controlled benchmark",
+    "AUPRO",
+    "MVTec AD",
+    "VisA"
+  ],
+  "notes": "File-level mixed licensing: the 33 authors' original Python files marked MIT-covered in LICENSE_CODE_SCOPE.md are released under MIT; the authors' derived result tables, figures, and documentation are released under CC BY 4.0. The repository as a whole is not MIT-licensed. These licenses do not apply to third-party datasets, weights, or libraries, which remain under their original licenses. src/metrics/metrics.py was removed from the public copy because its anomalib-related provenance is unresolved. MVTec AD is CC BY-NC-SA 4.0; the VisA dataset is CC BY 4.0 (VisA source code is separately Apache-2.0); OpenCLIP weights are not included and remain under their original licenses."
+}

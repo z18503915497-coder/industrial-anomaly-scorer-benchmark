@@ -1,0 +1,110 @@
+{
+  "per_dataset": {
+    "MVTec": {
+      "A0_vne_k1": {
+        "b2_mean_s": 0.54456,
+        "b3_mean_ms": 0.4216666666666667,
+        "b4_mean_s": 0.14020000000000002,
+        "storage_min": 1050628,
+        "storage_native": 3147780,
+        "b5_mean_ms": 53.059999999999995
+      },
+      "A1_nearest_full": {
+        "b2_mean_s": 0.03284,
+        "b3_mean_ms": 6.978333333333334,
+        "b4_mean_s": 2.212933333333333,
+        "storage_min": 20070400,
+        "storage_native": 20070400,
+        "b5_mean_ms": 73.42666666666668
+      },
+      "A2_nearest_coreset5": {
+        "b2_mean_s": 3.5975200000000003,
+        "b3_mean_ms": 0.5801999999999999,
+        "b4_mean_s": 0.16933333333333328,
+        "storage_min": 1003520,
+        "storage_native": 1003520,
+        "b5_mean_ms": 52.306666666666665
+      },
+      "A3_nearest_coreset10": {
+        "b2_mean_s": 7.292966666666667,
+        "b3_mean_ms": 0.8686666666666667,
+        "b4_mean_s": 0.2848666666666667,
+        "storage_min": 2007040,
+        "storage_native": 2007040
+      },
+      "A4_nearest_random5": {
+        "b2_mean_s": 0.0019800000000000004,
+        "b3_mean_ms": 0.5732666666666667,
+        "b4_mean_s": 0.1694,
+        "storage_min": 1003520,
+        "storage_native": 1003520
+      }
+    },
+    "VisA": {
+      "A0_vne_k1": {
+        "b2_mean_s": 0.5274666666666666,
+        "b3_mean_ms": 0.418,
+        "b4_mean_s": 0.21858333333333335,
+        "storage_min": 1050628,
+        "storage_native": 3147780,
+        "b5_mean_ms": 26.916666666666668
+      },
+      "A1_nearest_full": {
+        "b2_mean_s": 0.02934166666666667,
+        "b3_mean_ms": 6.81475,
+        "b4_mean_s": 3.3939166666666662,
+        "storage_min": 20070400,
+        "storage_native": 20070400,
+        "b5_mean_ms": 46.83333333333332
+      },
+      "A2_nearest_coreset5": {
+        "b2_mean_s": 3.4307,
+        "b3_mean_ms": 0.5730000000000001,
+        "b4_mean_s": 0.26025,
+        "storage_min": 1003520,
+        "storage_native": 1003520,
+        "b5_mean_ms": 28.200000000000003
+      },
+      "A3_nearest_coreset10": {
+        "b2_mean_s": 6.901816666666666,
+        "b3_mean_ms": 0.8669166666666666,
+        "b4_mean_s": 0.4380833333333333,
+        "storage_min": 2007040,
+        "storage_native": 2007040
+      },
+      "A4_nearest_random5": {
+        "b2_mean_s": 0.001958333333333333,
+        "b3_mean_ms": 0.5653333333333332,
+        "b4_mean_s": 0.2663333333333333,
+        "storage_min": 1003520,
+        "storage_native": 1003520
+      }
+    }
+  },
+  "derived": {
+    "MVTec": {
+      "A2_prepare_over_A0": 6.60628764507125,
+      "A0_prepare_over_A1": 16.582216808769793,
+      "A0_prepare_over_A4": 275.030303030303,
+      "A2_scorer_over_A0": 1.3759683794466402,
+      "A1_scorer_over_A0": 16.549407114624508,
+      "A0_b5_over_A2": 1.0144022431812387,
+      "A1_b5_over_A0": 1.3838421912300543,
+      "A1_storage_over_A0": 19.10324110912711,
+      "A0_storage_over_A2": 1.0469427614795919,
+      "A0_native_over_A2": 3.136738679846939
+    },
+    "VisA": {
+      "A2_prepare_over_A0": 6.504107684529828,
+      "A0_prepare_over_A1": 17.976711161601816,
+      "A0_prepare_over_A4": 269.34468085106386,
+      "A2_scorer_over_A0": 1.3708133971291867,
+      "A1_scorer_over_A0": 16.303229665071772,
+      "A0_b5_over_A2": 0.9544917257683214,
+      "A1_b5_over_A0": 1.7399380804953555,
+      "A1_storage_over_A0": 19.10324110912711,
+      "A0_storage_over_A2": 1.0469427614795919,
+      "A0_native_over_A2": 3.136738679846939
+    }
+  }
+}

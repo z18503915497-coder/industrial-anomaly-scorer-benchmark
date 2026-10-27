@@ -1,0 +1,8 @@
+Sensitive-information scan of the public-release preparation package
+Date: 2026-10-26
+Scope: text files (.py, .md, .json, .yaml, .txt, .sh, .ps1, .csv, .cff); report excluded.
+Checks: project/user/root absolute paths, password/API-key/access-token assignments, OpenAI/AWS-style keys, private/SSH keys.
+
+Note: author names, affiliation, corresponding e-mail, and ORCID are intentionally public academic metadata, not private personal data.
+
+RESULT: no real absolute paths, password/API-key/access-token assignments, private keys, or SSH keys were found in the packaged text files.

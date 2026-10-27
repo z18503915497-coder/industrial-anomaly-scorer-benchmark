@@ -1,0 +1,52 @@
+experiment:
+  name: vne_reference_baseline
+  stage: Stage 6
+  seed: 42
+  protocol_name: LOCO auxiliary-category SP training + target-normal visual reference
+
+dataset:
+  name: mvtec_ad
+  root: data/mvtec_ad
+  categories: all
+  all_categories:
+    - carpet
+    - grid
+    - leather
+    - tile
+    - wood
+    - bottle
+    - cable
+    - capsule
+    - hazelnut
+    - metal_nut
+    - pill
+    - screw
+    - toothbrush
+    - transistor
+    - zipper
+  image_size: [224, 224]
+  max_normal_reference: 50
+
+model:
+  name: ViT-B-16
+  pretrained: openai
+  device: cuda:0
+
+reference:
+  normalizer: reference_minmax
+  similarity_chunk_size: 1024
+
+vne:
+  n_components: 1
+  covariance_type: full
+
+methods:
+  - nearest_reference
+  - vne_k1
+
+output:
+  dir: results/vne_reference_baseline/stage6_mvtec15_seed42
+
+metrics:
+  image_topk: 0.01
+  aupro_max_fpr: 0.30

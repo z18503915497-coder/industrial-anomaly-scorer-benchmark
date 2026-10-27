@@ -1,0 +1,5 @@
+Batch,Dataset,Records,Categories,Runner version,Runner SHA256 (prefix),Gate policy,AUPRO warnings
+remaining_21_ab_extension,MVTec,60,12,v5-remaining21-20261025,1b5dd5103601b2c1,v5 inherits v4 AUPRO policy; Image/Pixel<=1e-6; AUPRO PASS/WARNING/block,0
+remaining_21_ab_extension,VisA,45,9,v5-remaining21-20261025,1b5dd5103601b2c1,v5 inherits v4 AUPRO policy; Image/Pixel<=1e-6; AUPRO PASS/WARNING/block,3
+v3_mvtec15_20261025,MVTec,15,3,v3-tolerance-20261025,f48e27d7401e81f4,"v3: Image<=1e-6, Pixel<=1e-6, AUPRO<=3e-5; all three required",0
+visa_three_category_completion,VisA,15,3,v4-aupro-warning-20261025,89e1d5ebf5c92a00,"v4: Image<=1e-6, Pixel<=1e-6; AUPRO<=3e-5 PASS, (3e-5,1e-3] WARNING, >1e-3 block",1

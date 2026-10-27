@@ -1,0 +1,37 @@
+MIT License
+
+Copyright (c) 2026 Ruipeng Zhi and Hao Li
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Scope: this MIT grant applies only to the files marked "MIT-covered" in
+LICENSE_CODE_SCOPE.md. It does not apply to third-party datasets, pretrained
+weights, imported libraries, or to any file excluded after the file-level
+license audit. The public package removed src/metrics/metrics.py (unresolved
+anomalib reference) and the unused src/anomaly directory (including an internal
+backup) from the public copy; those files remain only in the long-term project
+archive.
+
+Third-party libraries imported at runtime (PyTorch, OpenCLIP, scikit-learn,
+NumPy, SciPy, pandas, matplotlib, python-docx) remain under their own licenses.
+
+The authors release the files marked MIT-covered under the MIT License.
+Final publication of this package requires explicit authorization by both
+authors. This license does not apply to third-party datasets, weights, or
+libraries, which remain under their original licenses.

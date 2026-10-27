@@ -1,0 +1,78 @@
+{
+ "MVTec": {
+  "bottle": {
+   "nearest": {
+    "image_auroc_top1": 0.9976190476,
+    "pixel_auroc_global": 0.9724444567,
+    "aupro_0_30": 0.8687433954
+   },
+   "vne_k1": {
+    "image_auroc_top1": 0.9976190476,
+    "pixel_auroc_global": 0.9683904723,
+    "aupro_0_30": 0.8711840885
+   }
+  },
+  "grid": {
+   "nearest": {
+    "image_auroc_top1": 0.8663324979,
+    "pixel_auroc_global": 0.927448522,
+    "aupro_0_30": 0.8519354862
+   },
+   "vne_k1": {
+    "image_auroc_top1": 0.9565580618,
+    "pixel_auroc_global": 0.9387717786,
+    "aupro_0_30": 0.8902078846
+   }
+  },
+  "screw": {
+   "nearest": {
+    "image_auroc_top1": 0.8007788481,
+    "pixel_auroc_global": 0.9430937074,
+    "aupro_0_30": 0.7803470042
+   },
+   "vne_k1": {
+    "image_auroc_top1": 0.6761631482,
+    "pixel_auroc_global": 0.9484828309,
+    "aupro_0_30": 0.805688062
+   }
+  }
+ },
+ "VisA": {
+  "candle": {
+   "nearest": {
+    "image_auroc_top1": 0.9108,
+    "pixel_auroc_global": 0.9288823291,
+    "aupro_0_30": 0.8571906962
+   },
+   "vne_k1": {
+    "image_auroc_top1": 0.9024,
+    "pixel_auroc_global": 0.9318183913,
+    "aupro_0_30": 0.8697914986
+   }
+  },
+  "pcb3": {
+   "nearest": {
+    "image_auroc_top1": 0.7786138614,
+    "pixel_auroc_global": 0.8415025136,
+    "aupro_0_30": 0.5083613634
+   },
+   "vne_k1": {
+    "image_auroc_top1": 0.6247524752,
+    "pixel_auroc_global": 0.8573175998,
+    "aupro_0_30": 0.5225202343
+   }
+  },
+  "macaroni1": {
+   "nearest": {
+    "image_auroc_top1": 0.7822,
+    "pixel_auroc_global": 0.7291430568,
+    "aupro_0_30": 0.3019825961
+   },
+   "vne_k1": {
+    "image_auroc_top1": 0.8154,
+    "pixel_auroc_global": 0.7858526819,
+    "aupro_0_30": 0.3871701941
+   }
+  }
+ }
+}

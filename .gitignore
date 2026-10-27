@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.zip
+data_raw/
+weights/
+outputs/scratch/

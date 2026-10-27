@@ -1,0 +1,27 @@
+Extended CPU recomputation from frozen CSVs
+
+FORMAL PRIMARY (full 27, A0-A2 AUPRO, Holm two datasets)
+  MVTec: n=15 mean=0.060369612 median=0.048090498 W/L/T=[14, 1, 0] p=0.0003051758 Holm=0.0006103516 (exact)
+  VisA: n=12 mean=0.041830593 median=0.034459268 W/L/T=[10, 2, 0] p=0.0122070312 Holm=0.0122070312 (exact)
+
+POST HOC 21-CLASS (exclude six pilots; not blind; full 27 remains formal)
+  MVTec: n=12 mean=0.055858661 W/L/T=[11, 1, 0] p=0.0024414062 Holm=0.0048828125 (exact)
+  VisA: n=9 mean=0.032750442 W/L/T=[7, 2, 0] p=0.0742187500 Holm=0.0742187500 (exact)
+
+HISTORICAL PCA (same-run vs A0; cross-batch vs A2; uncorrected; not equivalence)
+  MVTec PCA090 vs A0: mean=+0.000844 W/L/T=[7, 8, 0] p=0.977966; vs A2: mean=+0.061210 W/L/T=[14, 1, 0] p=0.000610
+  VisA PCA090 vs A0: mean=+0.000275 W/L/T=[7, 5, 0] p=0.791016; vs A2: mean=+0.042110 W/L/T=[10, 2, 0] p=0.012207
+  MVTec PCA097 vs A0: mean=+0.003393 W/L/T=[9, 6, 0] p=0.276855; vs A2: mean=+0.063760 W/L/T=[13, 2, 0] p=0.000427
+  VisA PCA097 vs A0: mean=+0.002337 W/L/T=[9, 3, 0] p=0.233398; vs A2: mean=+0.044172 W/L/T=[11, 1, 0] p=0.009277
+  MVTec PCA099 vs A0: mean=-0.006732 W/L/T=[3, 12, 0] p=0.035339; vs A2: mean=+0.053634 W/L/T=[12, 3, 0] p=0.002625
+  VisA PCA099 vs A0: mean=-0.001233 W/L/T=[6, 6, 0] p=0.909668; vs A2: mean=+0.040602 W/L/T=[10, 2, 0] p=0.034180
+
+PCA STORAGE (float64 components_+mean_)
+  MVTec PCA090: mean=661094.4 B range=376832-892928 B
+  MVTec PCA097: mean=1280955.7 B range=970752-1486848 B
+  MVTec PCA099: mean=1677448.5 B range=1466368-1802240 B
+  MVTec A0_min=1050628 B; A2=1003520 B
+  VisA PCA090: mean=636586.7 B range=495616-782336 B
+  VisA PCA097: mean=1274197.3 B range=1126400-1404928 B
+  VisA PCA099: mean=1679018.7 B range=1581056-1757184 B
+  VisA A0_min=1050628 B; A2=1003520 B

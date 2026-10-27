@@ -1,0 +1,200 @@
+{
+  "manifest_version": "stage3a_v3f_quickgelu",
+  "created_utc": "2026-10-23",
+  "supersedes": [
+    "stage3a_v2_final (preserved, frozen — GELU architecture mismatched to its weights)"
+  ],
+  "changes_from_v2f": "ARCHITECTURE_CORRECTION_ONLY — model changed from 'ViT-B-16' (GELU default in open_clip 3.3.0; no quick_gelu field) to 'ViT-B-16-quickgelu' (quick_gelu=true), matching the official OpenAI weight definition (timm/vit_base_patch16_clip_224.openai open_clip_config.json declares quick_gelu=true; weights sha256 4b869929...). Approved by ChatGPT 2026-10-23 based on the weight's official architecture, NOT on observed accuracy. All other protocol elements, chains, evaluators, reference rules and completeness rules are unchanged from v2-final. New markers/producer/manifest path/CSV names prevent mixing with frozen v2-final results.",
+  "purpose": "STAGE3A MVTec controlled normality-model family comparison — final corrected portable runner. MVTec only; VisA NOT included; no E2 formal timing claim.",
+  "authorization": {
+    "stage3a_mvtec": "CONDITIONALLY_AUTHORIZED FOR QUICKGELU RERUN (ChatGPT, 2026-10-23); GPU runs gated on CPU tests, QuickGELU activation verification and user-confirmed GPU price",
+    "visa_formal": "NOT_AUTHORIZED",
+    "e2_formal": "NOT_AUTHORIZED",
+    "manuscript_revision": "NOT_AUTHORIZED"
+  },
+  "dataset": {
+    "name": "mvtec_ad",
+    "data_root": "CLI --data-root (default: <project-root>/data/mvtec_ad)",
+    "categories": [
+      "carpet",
+      "grid",
+      "leather",
+      "tile",
+      "wood",
+      "bottle",
+      "cable",
+      "capsule",
+      "hazelnut",
+      "metal_nut",
+      "pill",
+      "screw",
+      "toothbrush",
+      "transistor",
+      "zipper"
+    ],
+    "image_size": [
+      224,
+      224
+    ],
+    "test_split": "all test images (good + all defect types) with GT masks; image-mask pairing verified at load AND in the data signature",
+    "reference_rule": "train/good, src.dataset sorted() path order, first <=50",
+    "max_normal_reference": 50
+  },
+  "model": {
+    "name": "ViT-B-16-quickgelu",
+    "model_name": "ViT-B-16-quickgelu",
+    "quick_gelu": true,
+    "open_clip_version": "3.3.0",
+    "official_source": "timm/vit_base_patch16_clip_224.openai (Hugging Face repo); open_clip_config.json declares quick_gelu=true; OpenAI CLIP ViT was trained with QuickGELU",
+    "architecture_correction_reason": "The plain 'ViT-B-16' config in open_clip 3.3.0 has no quick_gelu field (GELU default) and pretrained-tag checks only warn; using it with OpenAI QuickGELU weights is architecture-mismatched. v3f uses 'ViT-B-16-quickgelu' which matches the official weight definition. Decision based on the pretrained model's original definition, not on accuracy.",
+    "pretrained_source": "local offline safetensors ONLY (no network downloads)",
+    "weights_path": "CLI --weights (default: <project-root>/<WEIGHTS_DIR>/open_clip_model.safetensors)",
+    "weights_sha256_expected": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+    "weights_hash_policy": "sha256 MUST equal expected at preflight; mismatch forbids run AND resume reuse",
+    "preprocess": "open_clip create_model_and_transforms default transform",
+    "feature": "196 patch tokens, D=512, proj applied, L2-normalized",
+    "weight_identity_note": "weights identical to the frozen 4b869929... file used by all prior Stage3A/3B runs; only the model config (GELU -> QuickGELU) changed",
+    "legacy_gelu_results": "stage3a_v2_final MVTec 75-record results are PRESERVED FROZEN but are architecture-mismatched historical reference (GELU model + QuickGELU weights); they must not be blended with QuickGELU results"
+  },
+  "chains": [
+    {
+      "id": "vne_k1",
+      "role": "anchor"
+    },
+    {
+      "id": "nearest",
+      "role": "anchor"
+    },
+    {
+      "id": "pca_residual_0p97",
+      "role": "PRIMARY"
+    },
+    {
+      "id": "pca_residual_0p90",
+      "role": "pre-declared sensitivity"
+    },
+    {
+      "id": "pca_residual_0p99",
+      "role": "pre-declared sensitivity"
+    }
+  ],
+  "formal_completeness_guard": {
+    "complete_standard": "ALWAYS the frozen 15 categories x 5 chains = 75 unique valid records",
+    "subset_rule": "--categories / --category produce PARTIAL runs only; expectations are NEVER relaxed to the run subset",
+    "checks": [
+      "missing categories",
+      "unexpected categories",
+      "exact chain-set equality per category (missing AND unexpected chains fail)",
+      "duplicate (category, chain) keys",
+      "status == OK",
+      "metrics finite within [0,1]",
+      "required fields/types present",
+      "data_signature_v2 present and 64-hex"
+    ],
+    "partial_policy": "partial results retained for recovery but status CANNOT be COMPLETE; final CSV stays *_PARTIAL.csv until 75/75 valid"
+  },
+  "resume_integrity": {
+    "data_signature_v2": "content-level SHA256 over: every normal reference image, every normal test image, every defect test image with its EXPLICIT paired mask (4-tuple), using dataset-relative POSIX paths; data_root excluded from the hash (machine-independent)",
+    "no_backfill_rule": "if formal records exist but run_fingerprint.json is missing -> resume REFUSED (exit 5); fingerprints are never backfilled for unknown-origin results",
+    "fingerprint_contents": [
+      "protocol manifest sha256",
+      "runner sha256",
+      "weights sha256",
+      "three source-file sha256",
+      "device",
+      "marker"
+    ],
+    "per_category_resume_validation": [
+      "marker",
+      "category identity",
+      "exact 5-chain set",
+      "stored field validity",
+      "recomputed data signature equality"
+    ],
+    "non_resume_overwrite": "refused (exit 5) when formal records already exist; use a NEW --output-dir",
+    "smoke_formal_isolation": "separate output subtrees and distinct markers; smoke records are never read as formal results"
+  },
+  "normalization_safety": {
+    "hard_stop_on": [
+      "non-finite raw scores",
+      "non-finite normalized scores",
+      "non-finite anomaly maps",
+      "reference normalization range <= 1e-12"
+    ],
+    "behavior": "STOP (SCIENTIFIC_SAFETY_STOP, exit 4); evidence (category/chain/min/max/range) written to SAFETY_STOP_REPORT.json; degenerate zeroed maps never recorded as success",
+    "outside_01_policy": "test normalized scores outside [0,1] are informational counts only, NOT failures"
+  },
+  "timing_boundary_v2": {
+    "label": "PRELIMINARY_DIAGNOSTIC",
+    "per_chain_fields": [
+      "fit_s",
+      "ref_score_s",
+      "ref_norm_s",
+      "test_scoring_s",
+      "test_normalize_s",
+      "test_upsample_s",
+      "test_map_pipeline_s",
+      "metrics_s",
+      "chain_total_s"
+    ],
+    "scorer_only_note": "test_scoring_s is scorer-only on cached features but single-run; formal E2 needs pre-registered repeats/warmup/CUDA-sync"
+  },
+  "resource_guard": {
+    "max_wall_hours": 2.0,
+    "wallclock_semantics": "cumulative wall-clock (incl. preflight/model setup) checked before each category; breach -> exit 4 WALLCLOCK_BUDGET stop with partial results kept",
+    "rmb_budget_note": "the pre-approved GPU budget CANNOT be auto-enforced by software; the user MUST verify actual charges in the GPU provider console; this runner claims no billing protection"
+  },
+  "break_even_classification_v2": {
+    "definitions": {
+      "DeltaP": "prep_VNE - prep_Nearest",
+      "DeltaS": "score_Nearest - score_VNE",
+      "CostDifference(N)": "DeltaP - N * DeltaS (N>=0 real; integer meaning = images scored per category)"
+    },
+    "regimes": [
+      "CROSSOVER (DeltaP>0,DeltaS>0): Nearest low-load, VNE above N*=DeltaP/DeltaS",
+      "CROSSOVER (DeltaP<0,DeltaS<0): VNE low-load, Nearest above N*=DeltaP/DeltaS",
+      "NEAREST_DOMINATES (DeltaP>0,DeltaS<0)",
+      "VNE_DOMINATES (DeltaP<0,DeltaS>0)",
+      "DeltaS=0 boundary: no division; dominance by sign of DeltaP; both zero -> IDENTICAL",
+      "DeltaP=0 boundary: no division; strict dominance for N>0 by sign of DeltaS",
+      "INDETERMINATE: CI of DeltaP or DeltaS spans zero"
+    ],
+    "integer_semantics": "first_strict_N = floor(N*)+1; tie exactly at integer N=N*"
+  },
+  "stop_conditions": [
+    "preflight failure (exit 2)",
+    "non-finite or degenerate normalization (exit 4, evidence kept)",
+    "wall-clock budget breach (exit 4)",
+    "RAM guard breach (exit 4)",
+    "completeness guard failure -> INCOMPLETE (partial kept; never COMPLETE)",
+    "fingerprint/resume violation (exit 5)",
+    "GPU access/price precondition unmet -> user stops, reports BLOCKED (no self-authorized workaround)"
+  ],
+  "required_files_on_target_machine": {
+    "project_tree_minimum": [
+      "src/sara/vne.py",
+      "src/models/clip_wrapper.py",
+      "src/dataset.py",
+      "experiments/vne_reference_baseline/run_vne_reference_baseline.py",
+      "experiments/ablation/ablation_utils.py"
+    ],
+    "data": "data/mvtec_ad/ (15 categories)",
+    "weights": "open_clip_model.safetensors (sha256 4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f)",
+    "this_dir": "final_patch/ (runner v2-final + manifest v2-final + regression tests)",
+    "python_env": "torch, open_clip, scikit-learn, numpy, Pillow",
+    "not_required": [
+      "VisA dataset",
+      "DINOv2 weights",
+      "anomalib"
+    ],
+    "example_commands": {
+      "windows_local": "python stage3a_mvtec_runner_v2_final.py --mode preflight --project-root \"<PROJECT_ROOT>\" --device cpu",
+      "gpu_linux": "python stage3a_mvtec_runner_v2_final.py --mode formal --project-root <PROJECT_ROOT> --data-root <PROJECT_ROOT>/data/mvtec_ad --weights <PROJECT_ROOT>/<WEIGHTS_DIR>/open_clip_model.safetensors --output-dir ./runs/formal_v2f --device cuda:0   (先以 --mode smoke 验证)"
+    }
+  },
+  "expected_records": {
+    "categories": 15,
+    "chains": 5,
+    "total": 75
+  }
+}

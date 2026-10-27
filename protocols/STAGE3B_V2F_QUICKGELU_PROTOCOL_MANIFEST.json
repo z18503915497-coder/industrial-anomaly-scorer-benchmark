@@ -1,0 +1,261 @@
+{
+  "manifest_version": "stage3b_v2f_quickgelu",
+  "created_utc": "2026-10-23",
+  "supersedes": [
+    "stage3b_visa_v1 (preserved, frozen — GELU architecture mismatched to its weights)"
+  ],
+  "purpose": "STAGE3B VisA 12-class controlled comparison — protocol-matched extension, now with QuickGELU architecture corrected to match the official OpenAI weights. VisA only; no E2 timing claim; PCA residual is an existing method, not a new algorithm; no novelty claims.",
+  "authorization": {
+    "visa_data_prep_and_code": "AUTHORIZED (ChatGPT, 2026-10-18)",
+    "quickgelu_architecture_correction": "APPROVED (ChatGPT, 2026-10-23; based on official weight definition, not accuracy)",
+    "visa_gpu_smoke": "AUTHORIZED conditionally (ChatGPT, 2026-10-23; gated on CPU tests PASS and user-confirmed GPU price)",
+    "visa_formal": "CONDITIONALLY_AUTHORIZED (8 gate conditions, ChatGPT, 2026-10-23)",
+    "e2_formal": "NOT_AUTHORIZED",
+    "manuscript_revision": "NOT_AUTHORIZED"
+  },
+  "dataset": {
+    "name": "visa",
+    "adapter_name": "visa_mvtec_1cls_v1",
+    "adapter_built_utc": "2026-08-06T10:09:06Z",
+    "adapter_script": "experiments/visa/build_visa_mvtec_adapter.py",
+    "adapter_script_sha256": "6f081ecbae032582b009dd570d58ffadb8aee5a644d1448b25e7bfa4749a5ab5",
+    "source_archive_sha256": "2eb8690c803ab37de0324772964100169ec8ba1fa3f7e94291c9ca673f40f362",
+    "source_split_csv_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+    "official_split_type": "1cls (official VisA split preserved)",
+    "data_root": "CLI --data-root (default: <project-root>/data/visa_mvtec_1cls_v1)",
+    "categories": [
+      "candle",
+      "capsules",
+      "cashew",
+      "chewinggum",
+      "fryum",
+      "macaroni1",
+      "macaroni2",
+      "pcb1",
+      "pcb2",
+      "pcb3",
+      "pcb4",
+      "pipe_fryum"
+    ],
+    "image_size": [
+      224,
+      224
+    ],
+    "test_split": "all test images (good + anomaly); GT masks name-paired within the anomaly split",
+    "reference_rule": "train/good, sorted() path order, first <=50",
+    "max_normal_reference": 50,
+    "mask_convention": "name-paired identical basename (.png); NOT the MVTec '_mask' suffix; cross-split name indexing is forbidden (adapter reuses filenames across splits in 5 categories with DIFFERENT content, verified 2026-10-18)",
+    "expected_per_category": {
+      "candle": [
+        900,
+        100,
+        100
+      ],
+      "capsules": [
+        542,
+        60,
+        100
+      ],
+      "cashew": [
+        450,
+        50,
+        100
+      ],
+      "chewinggum": [
+        453,
+        50,
+        100
+      ],
+      "fryum": [
+        450,
+        50,
+        100
+      ],
+      "macaroni1": [
+        900,
+        100,
+        100
+      ],
+      "macaroni2": [
+        900,
+        100,
+        100
+      ],
+      "pcb1": [
+        904,
+        100,
+        100
+      ],
+      "pcb2": [
+        901,
+        100,
+        100
+      ],
+      "pcb3": [
+        905,
+        101,
+        100
+      ],
+      "pcb4": [
+        904,
+        101,
+        100
+      ],
+      "pipe_fryum": [
+        450,
+        50,
+        100
+      ]
+    },
+    "expected_per_category_semantics": "[train_good, test_good, test_anomaly]",
+    "expected_totals": {
+      "train_normal": 8659,
+      "test_normal": 962,
+      "test_anomaly": 1200,
+      "total_images": 10821,
+      "total_masks": 1200
+    }
+  },
+  "model": {
+    "name": "ViT-B-16-quickgelu",
+    "model_name": "ViT-B-16-quickgelu",
+    "quick_gelu": true,
+    "open_clip_version": "3.3.0",
+    "official_source": "timm/vit_base_patch16_clip_224.openai (Hugging Face repo); open_clip_config.json declares quick_gelu=true; OpenAI CLIP ViT was trained with QuickGELU",
+    "architecture_correction_reason": "The plain 'ViT-B-16' config in open_clip 3.3.0 has no quick_gelu field (GELU default) and pretrained-tag checks only warn; using it with OpenAI QuickGELU weights is architecture-mismatched. v2f uses 'ViT-B-16-quickgelu' which matches the official weight definition (approved 2026-10-23, not based on accuracy).",
+    "pretrained_source": "local offline safetensors ONLY (no network downloads)",
+    "weights_path": "CLI --weights (default: <project-root>/<WEIGHTS_DIR>/open_clip_model.safetensors)",
+    "weights_sha256_expected": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+    "weights_hash_policy": "sha256 MUST equal expected at preflight; mismatch forbids run AND resume reuse",
+    "preprocess": "open_clip create_model_and_transforms default transform",
+    "feature": "196 patch tokens, D=512, proj applied, L2-normalized",
+    "same_weights_as_stage3a": true,
+    "legacy_gelu_results": "stage3b_visa_v1 (bottle/candle GELU runs) and the legacy 2.24-era VisA historical results are PRESERVED FROZEN; the v1f GELU runs are architecture-mismatched historical reference and must not be blended with QuickGELU results. The legacy open_clip 2.24 VisA results (VNE/Nearest 12-class) were QuickGELU and remain the architecture-compatible historical reference for cross-checks."
+  },
+  "chains": [
+    {
+      "id": "vne_k1",
+      "role": "anchor"
+    },
+    {
+      "id": "nearest",
+      "role": "anchor"
+    },
+    {
+      "id": "pca_residual_0p97",
+      "role": "PRIMARY"
+    },
+    {
+      "id": "pca_residual_0p90",
+      "role": "pre-declared sensitivity"
+    },
+    {
+      "id": "pca_residual_0p99",
+      "role": "pre-declared sensitivity"
+    }
+  ],
+  "primary_analysis": {
+    "preselected": "pca_residual_0p97",
+    "rule": "primary configuration was pre-specified before any MVTec/VisA results and MUST NOT be re-selected based on observed results",
+    "mvtec_reanalysis_correction": "On MVTec 15-class results, PCA0.99 is NOT uniformly better than VNE-K1: mean pixel AUROC -0.000605 and mean AUPRO -0.005570 vs VNE-K1 (0.90 and 0.97 are positive on both). The earlier phrasing implying all PCA variance settings agree in direction is corrected here; original Stage3A files remain untouched and frozen."
+  },
+  "formal_completeness_guard": {
+    "complete_standard": "ALWAYS the frozen 12 categories x 5 chains = 60 unique valid records",
+    "subset_rule": "--categories / --category produce PARTIAL runs only; expectations are NEVER relaxed to the run subset",
+    "checks": [
+      "missing categories",
+      "unexpected categories",
+      "exact chain-set equality per category (missing AND unexpected chains fail)",
+      "duplicate (category, chain) keys",
+      "status == OK",
+      "metrics finite within [0,1]",
+      "required fields/types present",
+      "data_signature_v2 present and 64-hex"
+    ],
+    "partial_policy": "partial results retained for recovery but status CANNOT be COMPLETE; final CSV stays *_PARTIAL.csv until 60/60 valid"
+  },
+  "resume_integrity": {
+    "data_signature_v2": "content-level SHA256 over every normal reference image, every normal test image, every defect test image with its EXPLICIT paired mask (4-tuple), dataset-relative POSIX paths; data_root excluded from the hash (machine-independent)",
+    "no_backfill_rule": "if formal records exist but run_fingerprint.json is missing -> resume REFUSED (exit 5)",
+    "fingerprint_contents": [
+      "protocol manifest sha256",
+      "runner sha256",
+      "weights sha256",
+      "three source-file sha256",
+      "device",
+      "marker"
+    ],
+    "per_category_resume_validation": [
+      "marker",
+      "category identity",
+      "exact 5-chain set",
+      "stored field validity",
+      "recomputed data signature equality"
+    ],
+    "non_resume_overwrite": "refused (exit 5) when formal records already exist; use a NEW --output-dir",
+    "smoke_formal_isolation": "separate output subtrees and distinct markers; smoke records are never read as formal results"
+  },
+  "normalization_safety": {
+    "hard_stop_on": [
+      "non-finite raw scores",
+      "non-finite normalized scores",
+      "non-finite anomaly maps",
+      "reference normalization range <= 1e-12"
+    ],
+    "behavior": "STOP (SCIENTIFIC_SAFETY_STOP, exit 4); evidence (category/chain/min/max/range) written to SAFETY_STOP_REPORT.json",
+    "outside_01_policy": "test normalized scores outside [0,1] are informational counts only, NOT failures"
+  },
+  "timing_boundary_v2": {
+    "label": "PRELIMINARY_DIAGNOSTIC",
+    "note": "same boundary as Stage3A; NOT comparable to frozen Table 3 scorer-only benchmarks; no formal E2 lifecycle claim"
+  },
+  "resource_guard": {
+    "max_wall_hours": 2.0,
+    "wallclock_semantics": "cumulative wall-clock (incl. preflight/model setup) checked before each category; breach -> exit 4 WALLCLOCK_BUDGET stop with partial results kept",
+    "rmb_budget_note": "the pre-approved GPU budget CANNOT be auto-enforced by software; the user MUST verify actual charges in the GPU provider console"
+  },
+  "required_files_on_target_machine": {
+    "project_tree_minimum": [
+      "src/sara/vne.py",
+      "experiments/vne_reference_baseline/run_vne_reference_baseline.py",
+      "experiments/ablation/ablation_utils.py"
+    ],
+    "data": "data/visa_mvtec_1cls_v1/ (12 categories, adapter v1)",
+    "weights": "open_clip_model.safetensors (sha256 4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f)",
+    "this_dir": "stage3b_visa_runner_v1.py + STAGE3B_VISA_FINAL_PROTOCOL_MANIFEST.json",
+    "python_env": "torch, open_clip, scikit-learn, numpy, Pillow",
+    "not_required": [
+      "MVTec dataset (Stage3A frozen/complete)",
+      "VisA raw tar (adapter already built)",
+      "DINOv2 weights",
+      "anomalib"
+    ]
+  },
+  "expected_records": {
+    "categories": 12,
+    "chains": 5,
+    "total": 60
+  },
+  "provenance": {
+    "derived_from_runner": "stage3a_mvtec_runner_v2_final.py (sha256 353d579d3e321890f71f7784760ebe29968269573811a167565939c9f0008d5d) — copied to a NEW independent file; the original Stage3A runner is unmodified",
+    "stage3a_status": "MVTec 15x5 COMPLETE 2026-10-18 (75 records; historical Stage 6 crosscheck PASS); frozen",
+    "visa_historical_reference": "results/visa_main_comparison_v1.json (12 classes, 2026-08-06): VNE-K1 mean image 0.82868 / pixel 0.89441 / aupro 0.65378; Nearest mean image 0.85808 / pixel 0.89057 / aupro 0.64138",
+    "adapter_audits": [
+      "data/visa_raw/visa_extraction_audit_v1.json",
+      "data/visa_raw/visa_official_1cls_audit_v1.json",
+      "data/visa_raw/visa_mvtec_adapter_semantic_audit_v1.json",
+      "data/visa_mvtec_1cls_v1/adapter_manifest.json"
+    ],
+    "official_tar_sha256_reverified_2026_10_18": true
+  },
+  "stop_conditions": [
+    "preflight failure (exit 2)",
+    "VisA structure/mask-pairing violation (preflight exit 2)",
+    "non-finite or degenerate normalization (exit 4, evidence kept)",
+    "wall-clock budget breach (exit 4)",
+    "RAM guard breach (exit 4)",
+    "completeness guard failure -> INCOMPLETE (partial kept; never COMPLETE)",
+    "fingerprint/resume violation (exit 5)",
+    "any unauthorized GPU/experiment scope -> user stops, reports BLOCKED"
+  ]
+}

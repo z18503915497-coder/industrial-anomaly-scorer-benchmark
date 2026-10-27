@@ -1,0 +1,31 @@
+Recorded environment for the frozen 135-record A/B experiment
+==============================================================
+
+Python: 3.12.3
+PyTorch: 2.8.0+cu128
+CUDA: 12.8
+open-clip-torch: 3.3.0
+scikit-learn: 1.9.0
+NumPy: 2.3.2
+Pillow: version not recorded in the frozen records
+GPU: NVIDIA GeForce RTX 4090, 24 GB
+Batches: three GPU batches on the same hardware/software stack
+  - v3_mvtec15_20261025 (15 records)
+  - visa_three_category_completion (15 records)
+  - remaining_21_ab_extension (105 records)
+
+Document build environment (separate; Windows)
+----------------------------------------------
+python-docx: 1.2.0
+matplotlib: 3.10.8
+pandas: 2.3.3
+NumPy: 2.4.1
+Word: Microsoft Word 16.0 (used only for DOCX-to-PDF export and page-count checks)
+
+Notes
+-----
+- The GPU environment above is the one recorded for the frozen A/B records.
+- The document build environment is the one used to assemble the MVA candidate and
+  supplementary material; it is not the environment of the GPU runs.
+- No environment file was used to pin the historical QuickGELU batch; the manifest records the
+  model, weights, reference rule, and protocol, but not a complete pip freeze.

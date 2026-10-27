@@ -1,0 +1,2112 @@
+{
+  "n_rows": 135,
+  "n_unique_units": 135,
+  "integrity": {
+    "duplicate_combos": [],
+    "missing_methods": [],
+    "status_counts": {
+      "OK": 135
+    },
+    "datasets": {
+      "MVTec": 75,
+      "VisA": 60
+    },
+    "batch_counts": {
+      "v3_mvtec15_20261025": 15,
+      "visa_three_category_completion": 15,
+      "remaining_21_ab_extension": 105
+    },
+    "warnings": [
+      {
+        "dataset": "VisA",
+        "category": "candle",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "candle",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "candle",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "candle",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "1",
+        "reproduction": "WARNING"
+      },
+      {
+        "dataset": "VisA",
+        "category": "candle",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb3",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb3",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb3",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb3",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb3",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni1",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni1",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni1",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni1",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni1",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "cable",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "cable",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "cable",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "cable",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "cable",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "capsule",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "capsule",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "capsule",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "capsule",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "capsule",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "carpet",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "carpet",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "carpet",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "carpet",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "carpet",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "hazelnut",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "hazelnut",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "hazelnut",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "hazelnut",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "hazelnut",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "leather",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "leather",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "leather",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "leather",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "leather",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "metal_nut",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "metal_nut",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "metal_nut",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "metal_nut",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "metal_nut",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "pill",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "pill",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "pill",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "pill",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "pill",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "tile",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "tile",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "tile",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "tile",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "tile",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "toothbrush",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "toothbrush",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "toothbrush",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "toothbrush",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "toothbrush",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "transistor",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "transistor",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "transistor",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "transistor",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "transistor",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "wood",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "wood",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "wood",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "wood",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "wood",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "zipper",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "zipper",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "MVTec",
+        "category": "zipper",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "zipper",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "MVTec",
+        "category": "zipper",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "capsules",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "capsules",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "capsules",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "capsules",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "capsules",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "cashew",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "cashew",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "cashew",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "cashew",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "1",
+        "reproduction": "WARNING"
+      },
+      {
+        "dataset": "VisA",
+        "category": "cashew",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "chewinggum",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "chewinggum",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "chewinggum",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "chewinggum",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "chewinggum",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "fryum",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "fryum",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "fryum",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "fryum",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "1",
+        "reproduction": "WARNING"
+      },
+      {
+        "dataset": "VisA",
+        "category": "fryum",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni2",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni2",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni2",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni2",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "1",
+        "reproduction": "WARNING"
+      },
+      {
+        "dataset": "VisA",
+        "category": "macaroni2",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb1",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb1",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb1",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb1",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb1",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb2",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb2",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb2",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb2",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb2",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb4",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb4",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb4",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb4",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pcb4",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pipe_fryum",
+        "method": "A3_nearest_coreset10",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pipe_fryum",
+        "method": "A2_nearest_coreset5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      },
+      {
+        "dataset": "VisA",
+        "category": "pipe_fryum",
+        "method": "A1_nearest_full",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pipe_fryum",
+        "method": "A0_vne_k1",
+        "aupro_repro_warning": "0",
+        "reproduction": "MATCH"
+      },
+      {
+        "dataset": "VisA",
+        "category": "pipe_fryum",
+        "method": "A4_nearest_random5",
+        "aupro_repro_warning": "0",
+        "reproduction": ""
+      }
+    ],
+    "b5_status": {
+      "NOT_RUN": 54,
+      "OK": 81
+    },
+    "b3_n_images": [
+      42,
+      50
+    ],
+    "b3_cap_applied_counts": {
+      "1": 130,
+      "0": 5
+    },
+    "b2_algorithm_counts": {
+      "kcenter_greedy": 54,
+      "full": 27,
+      "": 27,
+      "uniform_random": 27
+    },
+    "n_ref_patches": [
+      9800
+    ]
+  },
+  "descriptives": {
+    "MVTec": {
+      "A0_vne_k1": {
+        "image_auroc_top1": {
+          "mean": 0.929791,
+          "sd_ddof0": 0.081888,
+          "median": 0.94354,
+          "min": 0.676163,
+          "max": 1.0,
+          "n": 15
+        },
+        "pixel_auroc_global": {
+          "mean": 0.943075,
+          "sd_ddof0": 0.032737,
+          "median": 0.948097,
+          "min": 0.876737,
+          "max": 0.987072,
+          "n": 15
+        },
+        "aupro_0_30": {
+          "mean": 0.828863,
+          "sd_ddof0": 0.083444,
+          "median": 0.850447,
+          "min": 0.628891,
+          "max": 0.963836,
+          "n": 15
+        },
+        "storage_native_bytes": {
+          "mean": 3147780.0,
+          "median": 3147780.0,
+          "min": 3147780.0,
+          "max": 3147780.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 1050628.0,
+          "median": 1050628.0,
+          "min": 1050628.0,
+          "max": 1050628.0
+        },
+        "b2_prepare_s": {
+          "mean": 0.54456,
+          "median": 0.5092,
+          "min": 0.4681,
+          "max": 0.8357
+        },
+        "b2_coreset_selection_s": {
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.020877,
+          "median": 0.020949,
+          "min": 0.01645,
+          "max": 0.022953
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 0.421667,
+          "median": 0.419,
+          "min": 0.392,
+          "max": 0.459
+        },
+        "b4_map_pipeline_s": {
+          "mean": 0.1402,
+          "median": 0.135,
+          "min": 0.05,
+          "max": 0.2
+        },
+        "ref_raw_range": {
+          "mean": 1006.46594,
+          "median": 929.6041,
+          "min": 655.3105,
+          "max": 1944.375
+        }
+      },
+      "A1_nearest_full": {
+        "image_auroc_top1": {
+          "mean": 0.933214,
+          "sd_ddof0": 0.058517,
+          "median": 0.934583,
+          "min": 0.800779,
+          "max": 1.0,
+          "n": 15
+        },
+        "pixel_auroc_global": {
+          "mean": 0.929315,
+          "sd_ddof0": 0.03791,
+          "median": 0.927292,
+          "min": 0.873046,
+          "max": 0.986058,
+          "n": 15
+        },
+        "aupro_0_30": {
+          "mean": 0.801449,
+          "sd_ddof0": 0.078519,
+          "median": 0.821242,
+          "min": 0.662897,
+          "max": 0.941881,
+          "n": 15
+        },
+        "storage_native_bytes": {
+          "mean": 20070400.0,
+          "median": 20070400.0,
+          "min": 20070400.0,
+          "max": 20070400.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 20070400.0,
+          "median": 20070400.0,
+          "min": 20070400.0,
+          "max": 20070400.0
+        },
+        "b2_prepare_s": {
+          "mean": 0.03284,
+          "median": 0.0296,
+          "min": 0.0166,
+          "max": 0.0511
+        },
+        "b2_coreset_selection_s": {
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.345105,
+          "median": 0.341051,
+          "min": 0.300564,
+          "max": 0.383694
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 6.978333,
+          "median": 6.851,
+          "min": 6.479,
+          "max": 7.674
+        },
+        "b4_map_pipeline_s": {
+          "mean": 2.212933,
+          "median": 2.195,
+          "min": 0.862,
+          "max": 3.187
+        },
+        "ref_raw_range": {
+          "mean": 1e-06,
+          "median": 1e-06,
+          "min": 1e-06,
+          "max": 2e-06
+        }
+      },
+      "A2_nearest_coreset5": {
+        "image_auroc_top1": {
+          "mean": 0.92859,
+          "sd_ddof0": 0.065425,
+          "median": 0.938572,
+          "min": 0.775774,
+          "max": 1.0,
+          "n": 15
+        },
+        "pixel_auroc_global": {
+          "mean": 0.915914,
+          "sd_ddof0": 0.044957,
+          "median": 0.90979,
+          "min": 0.82663,
+          "max": 0.983429,
+          "n": 15
+        },
+        "aupro_0_30": {
+          "mean": 0.768493,
+          "sd_ddof0": 0.090611,
+          "median": 0.779978,
+          "min": 0.584004,
+          "max": 0.915745,
+          "n": 15
+        },
+        "storage_native_bytes": {
+          "mean": 1003520.0,
+          "median": 1003520.0,
+          "min": 1003520.0,
+          "max": 1003520.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 1003520.0,
+          "median": 1003520.0,
+          "min": 1003520.0,
+          "max": 1003520.0
+        },
+        "b2_prepare_s": {
+          "mean": 3.59752,
+          "median": 3.5394,
+          "min": 3.2102,
+          "max": 4.1251
+        },
+        "b2_coreset_selection_s": {
+          "mean": 3.596387,
+          "median": 3.5385,
+          "min": 3.2094,
+          "max": 4.1241
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.028712,
+          "median": 0.028701,
+          "min": 0.023269,
+          "max": 0.031848
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 0.5802,
+          "median": 0.574,
+          "min": 0.547,
+          "max": 0.637
+        },
+        "b4_map_pipeline_s": {
+          "mean": 0.169333,
+          "median": 0.172,
+          "min": 0.06,
+          "max": 0.25
+        },
+        "ref_raw_range": {
+          "mean": 0.227122,
+          "median": 0.232164,
+          "min": 0.132368,
+          "max": 0.31131
+        }
+      },
+      "A3_nearest_coreset10": {
+        "image_auroc_top1": {
+          "mean": 0.930073,
+          "sd_ddof0": 0.063228,
+          "median": 0.936976,
+          "min": 0.789096,
+          "max": 1.0,
+          "n": 15
+        },
+        "pixel_auroc_global": {
+          "mean": 0.924699,
+          "sd_ddof0": 0.038649,
+          "median": 0.915897,
+          "min": 0.849431,
+          "max": 0.983832,
+          "n": 15
+        },
+        "aupro_0_30": {
+          "mean": 0.787448,
+          "sd_ddof0": 0.076122,
+          "median": 0.798932,
+          "min": 0.632204,
+          "max": 0.929445,
+          "n": 15
+        },
+        "storage_native_bytes": {
+          "mean": 2007040.0,
+          "median": 2007040.0,
+          "min": 2007040.0,
+          "max": 2007040.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 2007040.0,
+          "median": 2007040.0,
+          "min": 2007040.0,
+          "max": 2007040.0
+        },
+        "b2_prepare_s": {
+          "mean": 7.292967,
+          "median": 7.213,
+          "min": 6.6611,
+          "max": 7.9605
+        },
+        "b2_coreset_selection_s": {
+          "mean": 7.290147,
+          "median": 7.2111,
+          "min": 6.6591,
+          "max": 7.9584
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.042989,
+          "median": 0.043659,
+          "min": 0.035068,
+          "max": 0.048638
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 0.868667,
+          "median": 0.873,
+          "min": 0.804,
+          "max": 0.973
+        },
+        "b4_map_pipeline_s": {
+          "mean": 0.284867,
+          "median": 0.275,
+          "min": 0.105,
+          "max": 0.418
+        },
+        "ref_raw_range": {
+          "mean": 0.194386,
+          "median": 0.206198,
+          "min": 0.103895,
+          "max": 0.270837
+        }
+      },
+      "A4_nearest_random5": {
+        "image_auroc_top1": {
+          "mean": 0.893919,
+          "sd_ddof0": 0.103698,
+          "median": 0.919531,
+          "min": 0.626358,
+          "max": 1.0,
+          "n": 15
+        },
+        "pixel_auroc_global": {
+          "mean": 0.916202,
+          "sd_ddof0": 0.048723,
+          "median": 0.910006,
+          "min": 0.817426,
+          "max": 0.982907,
+          "n": 15
+        },
+        "aupro_0_30": {
+          "mean": 0.778603,
+          "sd_ddof0": 0.091428,
+          "median": 0.795162,
+          "min": 0.570551,
+          "max": 0.952956,
+          "n": 15
+        },
+        "storage_native_bytes": {
+          "mean": 1003520.0,
+          "median": 1003520.0,
+          "min": 1003520.0,
+          "max": 1003520.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 1003520.0,
+          "median": 1003520.0,
+          "min": 1003520.0,
+          "max": 1003520.0
+        },
+        "b2_prepare_s": {
+          "mean": 0.00198,
+          "median": 0.0021,
+          "min": 0.0013,
+          "max": 0.0027
+        },
+        "b2_coreset_selection_s": {
+          "mean": 0.000653,
+          "median": 0.0006,
+          "min": 0.0006,
+          "max": 0.0008
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.02836,
+          "median": 0.028736,
+          "min": 0.023948,
+          "max": 0.033711
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 0.573267,
+          "median": 0.575,
+          "min": 0.518,
+          "max": 0.674
+        },
+        "b4_map_pipeline_s": {
+          "mean": 0.1694,
+          "median": 0.172,
+          "min": 0.063,
+          "max": 0.264
+        },
+        "ref_raw_range": {
+          "mean": 0.361515,
+          "median": 0.38301,
+          "min": 0.223782,
+          "max": 0.430593
+        }
+      }
+    },
+    "VisA": {
+      "A0_vne_k1": {
+        "image_auroc_top1": {
+          "mean": 0.828676,
+          "sd_ddof0": 0.108757,
+          "median": 0.8363,
+          "min": 0.624752,
+          "max": 0.9714,
+          "n": 12
+        },
+        "pixel_auroc_global": {
+          "mean": 0.894413,
+          "sd_ddof0": 0.085391,
+          "median": 0.925352,
+          "min": 0.728999,
+          "max": 0.990532,
+          "n": 12
+        },
+        "aupro_0_30": {
+          "mean": 0.653772,
+          "sd_ddof0": 0.205164,
+          "median": 0.658443,
+          "min": 0.333987,
+          "max": 0.928596,
+          "n": 12
+        },
+        "storage_native_bytes": {
+          "mean": 3147780.0,
+          "median": 3147780.0,
+          "min": 3147780.0,
+          "max": 3147780.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 1050628.0,
+          "median": 1050628.0,
+          "min": 1050628.0,
+          "max": 1050628.0
+        },
+        "b2_prepare_s": {
+          "mean": 0.527467,
+          "median": 0.49075,
+          "min": 0.4524,
+          "max": 0.9295
+        },
+        "b2_coreset_selection_s": {
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.020897,
+          "median": 0.020724,
+          "min": 0.019731,
+          "max": 0.021886
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 0.418,
+          "median": 0.4145,
+          "min": 0.395,
+          "max": 0.438
+        },
+        "b4_map_pipeline_s": {
+          "mean": 0.218583,
+          "median": 0.229,
+          "min": 0.171,
+          "max": 0.283
+        },
+        "ref_raw_range": {
+          "mean": 1009.549525,
+          "median": 1010.245,
+          "min": 721.0657,
+          "max": 1280.136
+        }
+      },
+      "A1_nearest_full": {
+        "image_auroc_top1": {
+          "mean": 0.858082,
+          "sd_ddof0": 0.094796,
+          "median": 0.89495,
+          "min": 0.6817,
+          "max": 0.9652,
+          "n": 12
+        },
+        "pixel_auroc_global": {
+          "mean": 0.890569,
+          "sd_ddof0": 0.091322,
+          "median": 0.931179,
+          "min": 0.729143,
+          "max": 0.983481,
+          "n": 12
+        },
+        "aupro_0_30": {
+          "mean": 0.641383,
+          "sd_ddof0": 0.211679,
+          "median": 0.691875,
+          "min": 0.301983,
+          "max": 0.931787,
+          "n": 12
+        },
+        "storage_native_bytes": {
+          "mean": 20070400.0,
+          "median": 20070400.0,
+          "min": 20070400.0,
+          "max": 20070400.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 20070400.0,
+          "median": 20070400.0,
+          "min": 20070400.0,
+          "max": 20070400.0
+        },
+        "b2_prepare_s": {
+          "mean": 0.029342,
+          "median": 0.02515,
+          "min": 0.018,
+          "max": 0.0568
+        },
+        "b2_coreset_selection_s": {
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.340736,
+          "median": 0.332362,
+          "min": 0.320287,
+          "max": 0.40473
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 6.81475,
+          "median": 6.647,
+          "min": 6.406,
+          "max": 8.095
+        },
+        "b4_map_pipeline_s": {
+          "mean": 3.393917,
+          "median": 3.561,
+          "min": 2.634,
+          "max": 4.055
+        },
+        "ref_raw_range": {
+          "mean": 1e-06,
+          "median": 1e-06,
+          "min": 1e-06,
+          "max": 2e-06
+        }
+      },
+      "A2_nearest_coreset5": {
+        "image_auroc_top1": {
+          "mean": 0.853845,
+          "sd_ddof0": 0.09536,
+          "median": 0.8914,
+          "min": 0.691667,
+          "max": 0.9706,
+          "n": 12
+        },
+        "pixel_auroc_global": {
+          "mean": 0.874929,
+          "sd_ddof0": 0.103133,
+          "median": 0.908384,
+          "min": 0.667116,
+          "max": 0.983098,
+          "n": 12
+        },
+        "aupro_0_30": {
+          "mean": 0.611941,
+          "sd_ddof0": 0.210074,
+          "median": 0.608704,
+          "min": 0.279851,
+          "max": 0.922463,
+          "n": 12
+        },
+        "storage_native_bytes": {
+          "mean": 1003520.0,
+          "median": 1003520.0,
+          "min": 1003520.0,
+          "max": 1003520.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 1003520.0,
+          "median": 1003520.0,
+          "min": 1003520.0,
+          "max": 1003520.0
+        },
+        "b2_prepare_s": {
+          "mean": 3.4307,
+          "median": 3.38655,
+          "min": 3.186,
+          "max": 3.8079
+        },
+        "b2_coreset_selection_s": {
+          "mean": 3.429767,
+          "median": 3.38565,
+          "min": 3.185,
+          "max": 3.8071
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.028649,
+          "median": 0.028605,
+          "min": 0.027029,
+          "max": 0.030414
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 0.573,
+          "median": 0.572,
+          "min": 0.541,
+          "max": 0.608
+        },
+        "b4_map_pipeline_s": {
+          "mean": 0.26025,
+          "median": 0.274,
+          "min": 0.206,
+          "max": 0.337
+        },
+        "ref_raw_range": {
+          "mean": 0.220731,
+          "median": 0.21369,
+          "min": 0.17565,
+          "max": 0.292564
+        }
+      },
+      "A3_nearest_coreset10": {
+        "image_auroc_top1": {
+          "mean": 0.861283,
+          "sd_ddof0": 0.089179,
+          "median": 0.8906,
+          "min": 0.6819,
+          "max": 0.9658,
+          "n": 12
+        },
+        "pixel_auroc_global": {
+          "mean": 0.884649,
+          "sd_ddof0": 0.098346,
+          "median": 0.921683,
+          "min": 0.697707,
+          "max": 0.980942,
+          "n": 12
+        },
+        "aupro_0_30": {
+          "mean": 0.63342,
+          "sd_ddof0": 0.206718,
+          "median": 0.650888,
+          "min": 0.304702,
+          "max": 0.925142,
+          "n": 12
+        },
+        "storage_native_bytes": {
+          "mean": 2007040.0,
+          "median": 2007040.0,
+          "min": 2007040.0,
+          "max": 2007040.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 2007040.0,
+          "median": 2007040.0,
+          "min": 2007040.0,
+          "max": 2007040.0
+        },
+        "b2_prepare_s": {
+          "mean": 6.901817,
+          "median": 7.01765,
+          "min": 6.3507,
+          "max": 7.5115
+        },
+        "b2_coreset_selection_s": {
+          "mean": 6.899283,
+          "median": 7.0155,
+          "min": 6.3463,
+          "max": 7.5097
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.04334,
+          "median": 0.042756,
+          "min": 0.041094,
+          "max": 0.051191
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 0.866917,
+          "median": 0.8555,
+          "min": 0.822,
+          "max": 1.024
+        },
+        "b4_map_pipeline_s": {
+          "mean": 0.438083,
+          "median": 0.461,
+          "min": 0.34,
+          "max": 0.56
+        },
+        "ref_raw_range": {
+          "mean": 0.187443,
+          "median": 0.179378,
+          "min": 0.150905,
+          "max": 0.254044
+        }
+      },
+      "A4_nearest_random5": {
+        "image_auroc_top1": {
+          "mean": 0.815263,
+          "sd_ddof0": 0.113675,
+          "median": 0.86525,
+          "min": 0.634333,
+          "max": 0.9588,
+          "n": 12
+        },
+        "pixel_auroc_global": {
+          "mean": 0.876932,
+          "sd_ddof0": 0.093468,
+          "median": 0.898431,
+          "min": 0.714349,
+          "max": 0.981137,
+          "n": 12
+        },
+        "aupro_0_30": {
+          "mean": 0.619055,
+          "sd_ddof0": 0.211922,
+          "median": 0.606776,
+          "min": 0.326932,
+          "max": 0.919742,
+          "n": 12
+        },
+        "storage_native_bytes": {
+          "mean": 1003520.0,
+          "median": 1003520.0,
+          "min": 1003520.0,
+          "max": 1003520.0
+        },
+        "storage_min_inference_bytes": {
+          "mean": 1003520.0,
+          "median": 1003520.0,
+          "min": 1003520.0,
+          "max": 1003520.0
+        },
+        "b2_prepare_s": {
+          "mean": 0.001958,
+          "median": 0.00155,
+          "min": 0.0013,
+          "max": 0.003
+        },
+        "b2_coreset_selection_s": {
+          "mean": 0.000608,
+          "median": 0.0006,
+          "min": 0.0006,
+          "max": 0.0007
+        },
+        "b3_scorer_only_median_s": {
+          "mean": 0.028272,
+          "median": 0.02798,
+          "min": 0.025851,
+          "max": 0.031466
+        },
+        "b3_scorer_only_per_image_ms": {
+          "mean": 0.565333,
+          "median": 0.5595,
+          "min": 0.517,
+          "max": 0.629
+        },
+        "b4_map_pipeline_s": {
+          "mean": 0.266333,
+          "median": 0.266,
+          "min": 0.206,
+          "max": 0.341
+        },
+        "ref_raw_range": {
+          "mean": 0.38116,
+          "median": 0.381668,
+          "min": 0.266672,
+          "max": 0.461395
+        }
+      }
+    }
+  },
+  "primary_A0_vs_A2_aupro": {
+    "MVTec": {
+      "n": 15,
+      "mean_delta": 0.060369612,
+      "median_delta": 0.048090498,
+      "ci95_percentile": [
+        0.035868502,
+        0.085588814
+      ],
+      "wins_losses_ties": [
+        14,
+        1,
+        0
+      ],
+      "wilcoxon_stat": 3.0,
+      "wilcoxon_p": 0.00030517578125,
+      "method": "exact",
+      "n_nonzero": 15,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "per_category": {
+        "bottle": 0.016265089,
+        "cable": 0.102353048,
+        "capsule": 0.046909276,
+        "carpet": 0.153565753,
+        "grid": 0.131482502,
+        "hazelnut": 0.091243523,
+        "leather": 0.048090498,
+        "metal_nut": 0.005203027,
+        "pill": 0.005508383,
+        "screw": 0.087492666,
+        "tile": 0.079151262,
+        "toothbrush": 0.015563162,
+        "transistor": 0.038368194,
+        "wood": 0.098922979,
+        "zipper": -0.014575175
+      },
+      "holm_p": 0.0006103515625
+    },
+    "VisA": {
+      "n": 12,
+      "mean_delta": 0.041830593,
+      "median_delta": 0.034459268,
+      "ci95_percentile": [
+        0.015484252,
+        0.068167761
+      ],
+      "wins_losses_ties": [
+        10,
+        2,
+        0
+      ],
+      "wilcoxon_stat": 8.0,
+      "wilcoxon_p": 0.01220703125,
+      "method": "exact",
+      "n_nonzero": 12,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "per_category": {
+        "candle": 0.039032547,
+        "capsules": -0.001007931,
+        "cashew": 0.124204284,
+        "chewinggum": 0.067617179,
+        "fryum": 0.029885989,
+        "macaroni1": 0.107320016,
+        "macaroni2": 0.025680458,
+        "pcb1": -0.053829906,
+        "pcb2": 0.02647756,
+        "pcb3": 0.060860569,
+        "pcb4": 0.069593254,
+        "pipe_fryum": 0.006133095
+      },
+      "holm_p": 0.01220703125
+    }
+  },
+  "secondary_family": [
+    {
+      "dataset": "MVTec",
+      "comparison": "A0_vs_A2_image",
+      "metric": "image_auroc_top1",
+      "n": 15,
+      "mean_delta": 0.001201439,
+      "median_delta": -0.00375,
+      "ci95": [
+        -0.020207395,
+        0.021890862
+      ],
+      "wins_losses_ties": [
+        5,
+        9,
+        1
+      ],
+      "wilcoxon_stat": 46.0,
+      "raw_p": 0.7064271157473698,
+      "method": "asymptotic",
+      "n_nonzero": 14,
+      "n_abs_ties": 0,
+      "n_zeros": 1,
+      "bh_q": 0.7064271157473698
+    },
+    {
+      "dataset": "MVTec",
+      "comparison": "A0_vs_A2_pixel",
+      "metric": "pixel_auroc_global",
+      "n": 15,
+      "mean_delta": 0.027161697,
+      "median_delta": 0.029142297,
+      "ci95": [
+        0.016780618,
+        0.038076602
+      ],
+      "wins_losses_ties": [
+        14,
+        1,
+        0
+      ],
+      "wilcoxon_stat": 3.0,
+      "raw_p": 0.00030517578125,
+      "method": "exact",
+      "n_nonzero": 15,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.00152587890625
+    },
+    {
+      "dataset": "MVTec",
+      "comparison": "A0_vs_A4_aupro",
+      "metric": "aupro_0_30",
+      "n": 15,
+      "mean_delta": 0.050259536,
+      "median_delta": 0.055285074,
+      "ci95": [
+        0.037360705,
+        0.063119954
+      ],
+      "wins_losses_ties": [
+        15,
+        0,
+        0
+      ],
+      "wilcoxon_stat": 0.0,
+      "raw_p": 6.103515625e-05,
+      "method": "exact",
+      "n_nonzero": 15,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.0006103515625
+    },
+    {
+      "dataset": "MVTec",
+      "comparison": "A0_vs_A1_aupro",
+      "metric": "aupro_0_30",
+      "n": 15,
+      "mean_delta": 0.027414081,
+      "median_delta": 0.018857102,
+      "ci95": [
+        0.007662611,
+        0.049139393
+      ],
+      "wins_losses_ties": [
+        12,
+        3,
+        0
+      ],
+      "wilcoxon_stat": 20.0,
+      "raw_p": 0.02154541015625,
+      "method": "exact",
+      "n_nonzero": 15,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.035909016927083336
+    },
+    {
+      "dataset": "MVTec",
+      "comparison": "A0_vs_A3_aupro",
+      "metric": "aupro_0_30",
+      "n": 15,
+      "mean_delta": 0.041415314,
+      "median_delta": 0.046724015,
+      "ci95": [
+        0.020569993,
+        0.063046436
+      ],
+      "wins_losses_ties": [
+        12,
+        3,
+        0
+      ],
+      "wilcoxon_stat": 9.0,
+      "raw_p": 0.00201416015625,
+      "method": "exact",
+      "n_nonzero": 15,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.005035400390625
+    },
+    {
+      "dataset": "VisA",
+      "comparison": "A0_vs_A2_image",
+      "metric": "image_auroc_top1",
+      "n": 12,
+      "mean_delta": -0.025168454,
+      "median_delta": -0.003,
+      "ci95": [
+        -0.056181051,
+        0.001666944
+      ],
+      "wins_losses_ties": [
+        6,
+        6,
+        0
+      ],
+      "wilcoxon_stat": 29.0,
+      "raw_p": 0.4697265625,
+      "method": "exact",
+      "n_nonzero": 12,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.5219184027777778
+    },
+    {
+      "dataset": "VisA",
+      "comparison": "A0_vs_A2_pixel",
+      "metric": "pixel_auroc_global",
+      "n": 12,
+      "mean_delta": 0.019484743,
+      "median_delta": 0.010200179,
+      "ci95": [
+        0.004808338,
+        0.04045407
+      ],
+      "wins_losses_ties": [
+        11,
+        1,
+        0
+      ],
+      "wilcoxon_stat": 8.0,
+      "raw_p": 0.01220703125,
+      "method": "exact",
+      "n_nonzero": 12,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.0244140625
+    },
+    {
+      "dataset": "VisA",
+      "comparison": "A0_vs_A4_aupro",
+      "metric": "aupro_0_30",
+      "n": 12,
+      "mean_delta": 0.034716455,
+      "median_delta": 0.040506842,
+      "ci95": [
+        0.022427294,
+        0.046242335
+      ],
+      "wins_losses_ties": [
+        11,
+        1,
+        0
+      ],
+      "wilcoxon_stat": 1.0,
+      "raw_p": 0.0009765625,
+      "method": "exact",
+      "n_nonzero": 12,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.0032552083333333335
+    },
+    {
+      "dataset": "VisA",
+      "comparison": "A0_vs_A1_aupro",
+      "metric": "aupro_0_30",
+      "n": 12,
+      "mean_delta": 0.012388865,
+      "median_delta": 0.013357415,
+      "ci95": [
+        -0.008797767,
+        0.034729243
+      ],
+      "wins_losses_ties": [
+        7,
+        5,
+        0
+      ],
+      "wilcoxon_stat": 29.0,
+      "raw_p": 0.4697265625,
+      "method": "exact",
+      "n_nonzero": 12,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.5219184027777778
+    },
+    {
+      "dataset": "VisA",
+      "comparison": "A0_vs_A3_aupro",
+      "metric": "aupro_0_30",
+      "n": 12,
+      "mean_delta": 0.020351916,
+      "median_delta": 0.011542088,
+      "ci95": [
+        -0.002535688,
+        0.045268203
+      ],
+      "wins_losses_ties": [
+        9,
+        3,
+        0
+      ],
+      "wilcoxon_stat": 21.0,
+      "raw_p": 0.17626953125,
+      "method": "exact",
+      "n_nonzero": 12,
+      "n_abs_ties": 0,
+      "n_zeros": 0,
+      "bh_q": 0.25181361607142855
+    }
+  ],
+  "pooled_27_descriptive": {
+    "image_auroc_top1": {
+      "mean_delta": -0.010518514,
+      "median_delta": -0.00375,
+      "a0_better": 11,
+      "a2_better": 15,
+      "tie": 1
+    },
+    "pixel_auroc_global": {
+      "mean_delta": 0.023749717,
+      "median_delta": 0.015530107,
+      "a0_better": 25,
+      "a2_better": 2,
+      "tie": 0
+    },
+    "aupro_0_30": {
+      "mean_delta": 0.052130048,
+      "median_delta": 0.046909276,
+      "a0_better": 24,
+      "a2_better": 3,
+      "tie": 0
+    }
+  },
+  "image_regressions_A0_vs_A2": [
+    {
+      "dataset": "MVTec",
+      "category": "bottle",
+      "delta": -0.002380952
+    },
+    {
+      "dataset": "MVTec",
+      "category": "cable",
+      "delta": -0.012931034
+    },
+    {
+      "dataset": "MVTec",
+      "category": "capsule",
+      "delta": -0.035101715
+    },
+    {
+      "dataset": "MVTec",
+      "category": "metal_nut",
+      "delta": -0.01368524
+    },
+    {
+      "dataset": "MVTec",
+      "category": "pill",
+      "delta": -0.00518276
+    },
+    {
+      "dataset": "MVTec",
+      "category": "screw",
+      "delta": -0.099610576
+    },
+    {
+      "dataset": "MVTec",
+      "category": "transistor",
+      "delta": -0.00375
+    },
+    {
+      "dataset": "MVTec",
+      "category": "wood",
+      "delta": -0.007017544
+    },
+    {
+      "dataset": "MVTec",
+      "category": "zipper",
+      "delta": -0.017069328
+    },
+    {
+      "dataset": "VisA",
+      "category": "fryum",
+      "delta": -0.0088
+    },
+    {
+      "dataset": "VisA",
+      "category": "pcb1",
+      "delta": -0.0343
+    },
+    {
+      "dataset": "VisA",
+      "category": "pcb2",
+      "delta": -0.0755
+    },
+    {
+      "dataset": "VisA",
+      "category": "pcb3",
+      "delta": -0.137326733
+    },
+    {
+      "dataset": "VisA",
+      "category": "pcb4",
+      "delta": -0.113861386
+    },
+    {
+      "dataset": "VisA",
+      "category": "pipe_fryum",
+      "delta": -0.0068
+    }
+  ],
+  "image_regression_count": 15,
+  "pcb_image_deltas": [
+    {
+      "category": "pcb1",
+      "delta_image": -0.0343
+    },
+    {
+      "category": "pcb2",
+      "delta_image": -0.0755
+    },
+    {
+      "category": "pcb3",
+      "delta_image": -0.137326733
+    },
+    {
+      "category": "pcb4",
+      "delta_image": -0.113861386
+    }
+  ],
+  "storage": {
+    "MVTec": {
+      "A0_native": 3147780.0,
+      "A0_min": 1050628.0,
+      "A1": 20070400.0,
+      "A2": 1003520.0,
+      "A3": 2007040.0,
+      "A4": 1003520.0,
+      "A1_over_A0min": 19.1032,
+      "A0min_over_A2": 1.0469,
+      "A1_over_A2": 20.0,
+      "A0nat_over_A2": 3.1367
+    },
+    "VisA": {
+      "A0_native": 3147780.0,
+      "A0_min": 1050628.0,
+      "A1": 20070400.0,
+      "A2": 1003520.0,
+      "A3": 2007040.0,
+      "A4": 1003520.0,
+      "A1_over_A0min": 19.1032,
+      "A0min_over_A2": 1.0469,
+      "A1_over_A2": 20.0,
+      "A0nat_over_A2": 3.1367
+    }
+  },
+  "cost_cross_over": {
+    "MVTec": {
+      "B2_A0_mean_s": 0.54456,
+      "B2_A2_mean_s": 3.59752,
+      "delta_prepare_s": -3.05296,
+      "B3_per_image_A0_s": 0.000421667,
+      "B3_per_image_A2_s": 0.0005802,
+      "delta_per_image_s": -0.000158533,
+      "break_even_images": null
+    },
+    "VisA": {
+      "B2_A0_mean_s": 0.527467,
+      "B2_A2_mean_s": 3.4307,
+      "delta_prepare_s": -2.903233,
+      "B3_per_image_A0_s": 0.000418,
+      "B3_per_image_A2_s": 0.000573,
+      "delta_per_image_s": -0.000155,
+      "break_even_images": null
+    }
+  },
+  "source_csv_sha256_note": "see MANIFEST_SHA256.txt"
+}

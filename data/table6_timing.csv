@@ -1,0 +1,11 @@
+Dataset,Method,B3 mean (ms/image),B3 SD,B4 mean (s/category),B4 SD,B5 mean (ms/image),B5 n categories
+MVTec,A0 VNE-K1,0.422,0.021,0.140,0.041,53.06,15
+MVTec,A1 Nearest-Full,6.978,0.367,2.213,0.637,73.43,15
+MVTec,A2 Coreset-5%,0.580,0.028,0.169,0.052,52.31,15
+MVTec,A3 Coreset-10%,0.869,0.042,0.285,0.087,not run,not run
+MVTec,A4 Random-5%,0.573,0.040,0.169,0.053,not run,not run
+VisA,A0 VNE-K1,0.418,0.013,0.219,0.038,26.92,12
+VisA,A1 Nearest-Full,6.815,0.488,3.394,0.476,46.83,12
+VisA,A2 Coreset-5%,0.573,0.022,0.260,0.045,28.20,12
+VisA,A3 Coreset-10%,0.867,0.051,0.438,0.070,not run,not run
+VisA,A4 Random-5%,0.565,0.031,0.266,0.042,not run,not run
