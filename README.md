@@ -1,12 +1,16 @@
-# Reproducibility package — MVA manuscript (v1.2.6 final submission preparation)
+# Reproducibility package — MVA manuscript (v1.2.6)
 
 Manuscript: **Localization–Detection Trade-offs in Industrial Anomaly Scoring at Near-Matched Memory Budgets: A Controlled 27-Category Study**
 
 Authors: **Ruipeng Zhi and Hao Li**, Tomsk Polytechnic University, Tomsk, Russia.
 Corresponding author: Ruipeng Zhi (cz08@tpu.ru; ORCID 0009-0002-6065-4930).
 
-Status: **release preparation only.** This directory is not yet uploaded to GitHub or Zenodo,
-and no public URL or DOI is assigned. Public release requires final approval by both authors.
+Status: **author-approved reproducibility package (v1.2.6).** Repository:
+https://github.com/z18503915497-coder/industrial-anomaly-scorer-benchmark
+
+Both authors have approved release under the file-level licenses described below.
+A Zenodo DOI should be cited only after the corresponding public archive and its DOI
+have been verified.
 
 The package contains intentionally public academic author metadata (names, affiliation,
 corresponding e-mail, ORCID). It does not contain private personal data such as home address,
@@ -63,8 +67,9 @@ python code/make_figures.py
   for typesetting, with identical values.
 - `make_figures.py` regenerated the five PNG figures from the frozen CSV.
 
-No GPU run, no dataset download, no public upload, and no third-party reproduction was
-performed. The package must not be described as end-to-end GPU-reproduced.
+No GPU run, dataset download, or third-party reproduction was performed as part of
+the documented CPU verification. The package must not be described as end-to-end
+GPU-reproduced.
 
 ## Layout
 
@@ -215,14 +220,15 @@ sanitization.
 
 ## Citation
 
-`CITATION.cff` and `.zenodo.json` are release-preparation metadata. `.zenodo.json` is the
-hidden file used by the Zenodo GitHub integration; it is intentionally not named `zenodo.json`.
-No DOI has been assigned and no publication date is asserted. Do not add a DOI or repository
-URL to the manuscript until a real archive has been created and the identifier is confirmed.
+`CITATION.cff` and `.zenodo.json` provide repository and archive metadata. `.zenodo.json`
+is used by the Zenodo GitHub integration; it is intentionally not named `zenodo.json`.
+The GitHub repository URL is shown above. For a persistent citation, use a verified DOI
+from the corresponding published Zenodo archive when available. The manuscript has not
+been accepted or published by a journal as part of this software release.
 
-The manuscript Data availability statement describes the package as not publicly archived at
-the time of submission. Update it to the real repository/DOI status only after the archive
-exists and both authors approve; do not present a placeholder as a final public URL or DOI.
+Before journal submission, update the manuscript Data availability statement and cover
+letter to the actual public repository URL and verified Zenodo DOI, if issued. Do not
+submit placeholders or describe an unreleased archive as published.
 
 ## Integrity and limitations
 

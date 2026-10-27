@@ -1,6 +1,6 @@
 {
   "title": "Reproducibility package for: Localization–Detection Trade-offs in Industrial Anomaly Scoring at Near-Matched Memory Budgets: A Controlled 27-Category Study",
-  "description": "Frozen 135-record A/B results, historical PCA result tables, statistical recomputation code, table and figure generation code, experiment runners, protocol manifests, and measurement notes for a controlled 27-category comparison of five anomaly-detection scorers on MVTec AD and VisA. The package includes CPU-verified recomputation, tables, and figures. It does not include dataset images or pretrained weights. This is release-preparation metadata; the record has not been published and no DOI has been assigned.",
+  "description": "Frozen 135-record A/B results, historical PCA result tables, statistical recomputation code, table and figure generation code, experiment runners, protocol manifests, and measurement notes for a controlled 27-category comparison of five anomaly-detection scorers on MVTec AD and VisA. The package includes CPU-verified recomputation, tables, and figures. It does not include dataset images or pretrained weights. This archive accompanies a manuscript prepared for submission to Machine Vision and Applications; the journal article is not yet published.",
   "creators": [
     {
       "name": "Zhi, Ruipeng",
